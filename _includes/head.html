@@ -1,0 +1,17 @@
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	{% if page.url == "/" %}
+		<title>{{ site.title }}</title>
+	{% else %}
+		{% if page.title %}
+			<title>{{ page.title }} - {{ site.title }}</title>
+		{% endif %}
+	{% endif %}
+
+	<link rel="icon" href="{{ 'favicon.ico' | relative_url }}">
+
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+	<link rel="stylesheet" href="{{ 'src/main.css' | relative_url }}">
+</head>
