@@ -3,55 +3,8 @@
 ---
 
 @import "theme";
+@import "headers";
 
-header {
-	max-width: 900px;
-	margin: 0 auto;
-	margin-top: $ratio*$ratio*$ratio*$ratio*1rem;
-	margin-bottom: $ratio*$ratio*$ratio*1rem;
-	font-size: $ratio*1rem;
-	text-align: center;
-
-	img {
-		max-width: 600px;
-		padding: 0 1rem;
-	}
-
-	nav {
-		margin-top: $ratio*$ratio*$ratio*1rem;
-		li {
-			display: inline-block;
-		}
-		li + li {
-			margin-left: $ratio*$ratio*$ratio*1rem;
-		}
-		.secondary {
-			font-size: 1rem;
-		}
-		a {
-			transition: border-color .6s ease-in-out;
-			display: inline-block;
-			border-bottom: 4px solid transparent;
-			margin-bottom: -4px;
-		}
-		a,
-		a:link,
-		a:hover,
-		a:active,
-		a:visited {
-			text-decoration: none;
-			color: $black;
-		}
-		a:hover,
-		a:active {
-			transition-duration: .2s;
-			border-bottom-color: $blue;
-		}
-		a:active {
-			border-bottom-color: darken($blue, 10%);
-		}
-	}
-}
 
 footer {
 	text-align: center;

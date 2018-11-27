@@ -1,0 +1,97 @@
+nav {
+	a {
+		transition: border-color .6s ease-in-out;
+		display: inline-block;
+		border-bottom: 3px solid transparent;
+		margin-bottom: -3px;
+	}
+	a,
+	a:link,
+	a:hover,
+	a:active,
+	a:visited {
+		text-decoration: none;
+		color: $black;
+	}
+	a:hover,
+	a:active {
+		transition-duration: .2s;
+		border-bottom-color: $blue;
+	}
+	a:active {
+		border-bottom-color: darken($blue, 10%);
+	}
+}
+
+header {
+	max-width: 900px;
+	margin: 0 auto;
+	padding-top: $ratio*$ratio*$ratio*$ratio*1rem;
+	padding-bottom: $ratio*$ratio*$ratio*1rem;
+	font-size: $ratio*1rem;
+	text-align: center;
+
+	img {
+		max-width: 600px;
+		padding: 0 1rem;
+	}
+
+	nav {
+		margin-top: $ratio*$ratio*$ratio*1rem;
+		li {
+			display: inline-block;
+		}
+		li + li {
+			margin-left: $ratio*$ratio*$ratio*1rem;
+		}
+		.secondary {
+			font-size: 1rem;
+		}
+	}
+}
+
+.small-header {
+	background: #fff;
+	position: fixed;
+	z-index: 9;
+	width: 100%;
+	padding: 1rem/$ratio 1rem*$ratio 1rem/$ratio 1rem/$ratio;
+
+	transition: top .5s ease-in;
+	top: $ratio*$ratio*$ratio*-1rem;
+	.whoop & {
+		top: 0;
+
+	}
+
+	display: flex;
+	align-items: center;
+
+	img {
+		height: 2rem;
+		margin-right: $ratio*$ratio*1rem;
+	}
+	ul {
+		display: inline-block;
+		display: flex;
+		margin: 0;
+		flex: 1;
+	}
+	li {
+		display: inline-block;
+	}
+	li + li {
+		margin-left: $ratio*1rem;
+	}
+	.secondary {
+		float: right;
+		flex: 0;
+		a,
+		a:link,
+		a:hover,
+		a:active,
+		a:visited {
+			color: $grey3;
+		}
+	}
+}
