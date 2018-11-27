@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:200,400,400i,700");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700");
 
 
 
@@ -6,15 +6,12 @@ $black: #040404;
 $blue: #05BDFF;
 $orange: #D86531;
 
-
-$beige: #b6a99b;
-$grey-base: mix($beige, lighten($black, 16%));
-$grey1: $grey-base;
-$grey2: lighten($grey-base, 8%);
-$grey3: lighten($grey-base, 16%);
-$grey4: lighten($grey-base, 24%);
-$grey5: lighten($grey-base, 32%);
-$grey6: lighten($grey-base, 40%);
+$grey1: lighten($black, 16%);
+$grey2: lighten($black, 28%);
+$grey3: lighten($black, 36%);
+$grey4: lighten($black, 48%);
+$grey5: lighten($black, 64%);
+$grey6: lighten($black, 72%);
 
 $green: #22c546;
 $red: #ff3e29;
@@ -82,6 +79,10 @@ h1 {
 h2 {
 	font-size: 1em*$ratio;
 	margin: 1em*$ratio*$ratio 0 1em/$ratio/$ratio 0;
+	&.centered {
+		color: $grey5;
+		text-align: center;
+	}
 }
 h3 {
 	font-size: 1em;
@@ -186,7 +187,7 @@ blockquote {
 
 pre {
 	line-height: 1;
-	background: lighten($beige, 28%);
+	background: $grey6;
 	margin: 0;
 	padding: 1em/$ratio/$ratio 1em/$ratio;
 	border-radius: 4px;
@@ -195,7 +196,7 @@ pre {
 code {
 	font-family: monospace;
 	font-size: 0.8em;
-	background: lighten($beige, 28%);
+	background: $grey6;
 	border-radius: 4px;
 	padding: 0 1ex/$ratio;
 	p > & {
