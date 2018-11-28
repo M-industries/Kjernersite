@@ -1,4 +1,4 @@
-nav {
+nav li {
 	a {
 		transition: border-color .6s ease-in-out;
 		display: inline-block;
@@ -24,30 +24,33 @@ nav {
 }
 
 header {
-	max-width: 900px;
-	margin: 0 auto;
-	padding-top: $ratio*$ratio*$ratio*$ratio*1rem;
-	padding-bottom: $ratio*$ratio*$ratio*1rem;
-	font-size: $ratio*1rem;
-	text-align: center;
 
-	img {
-		max-width: 600px;
-		padding: 0 1rem;
+	.home & {
+		max-width: 900px;
+		margin: 0 auto;
+		padding-top: $ratio*$ratio*$ratio*$ratio*1rem;
+		padding-bottom: $ratio*$ratio*$ratio*1rem;
+		font-size: $ratio*1rem;
+		text-align: center;
+		img {
+			max-width: 600px;
+			padding: 0 1rem;
+		}
+
+		nav {
+			margin-top: $ratio*$ratio*$ratio*1rem;
+			li {
+				display: inline-block;
+			}
+			li + li {
+				margin-left: $ratio*$ratio*$ratio*1rem;
+			}
+			.secondary {
+				font-size: 1rem;
+			}
+		}
 	}
 
-	nav {
-		margin-top: $ratio*$ratio*$ratio*1rem;
-		li {
-			display: inline-block;
-		}
-		li + li {
-			margin-left: $ratio*$ratio*$ratio*1rem;
-		}
-		.secondary {
-			font-size: 1rem;
-		}
-	}
 }
 
 .small-header {
@@ -56,26 +59,44 @@ header {
 	z-index: 9;
 	width: 100%;
 	padding: 1rem/$ratio 1rem*$ratio 1rem/$ratio 1rem/$ratio;
+	top: 0;
 
-	transition: top .5s ease-in;
-	top: $ratio*$ratio*$ratio*-1rem;
+	&::after {
+	    content: "";
+	    display: block;
+	    background: url('../assets/photo1-blue.jpg') center/cover no-repeat ;
+	    height: 5px;
+	    position: absolute;
+	    bottom: -5px;
+	    left: 0;
+	    right: 0;
+	    opacity: .85;
+	}
+
+	.home & {
+		transition: top .5s ease-in;
+		top: $ratio*$ratio*$ratio*-1rem;
+	}
 	.header-out & {
 		top: 0;
-
 	}
 
 	display: flex;
 	align-items: center;
 
+	> a:first-child,
 	img {
 		height: 2rem;
-		margin-right: $ratio*$ratio*1rem;
 	}
+
 	ul {
 		display: inline-block;
 		display: flex;
 		margin: 0;
 		flex: 1;
+		&:first-of-type {
+			margin-left: $ratio*$ratio*1rem;
+		}
 	}
 	li {
 		display: inline-block;
@@ -94,4 +115,8 @@ header {
 			color: $grey3;
 		}
 	}
+}
+
+.page header + * {
+	padding-top: 1rem*$ratio*$ratio + 1rem/$ratio;
 }

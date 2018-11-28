@@ -8,11 +8,16 @@
 
 			<nav>
 				<ul>
-					<li><a href="#">Solutions</a></li>
-					<li><a href="#">Products</a></li>
-					<li><a href="#">Blog</a></li>
-					<li><a href="#">Company</a></li>
-					<li><a href="#">Platform</a></li>
+					{% for item in site.pages %}
+						{% if item.category == "main" %}
+
+							{% assign item_url = item.url | remove_first: "/pages/" %}
+							{% assign item_section = item_url | remove: "/" %}
+							<li class="{% if item.url == page.url %}current{% endif %} {% if item_section == page_section %}current-section{% endif %} {% if item_section == page.category %}current-section{% endif %}">
+								<a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+							</li>
+						{% endif %}
+					{% endfor %}
 				</ul>
 				<ul class="secondary">
 					<li><a href="#">Contact</a></li>
@@ -24,11 +29,16 @@
 		<nav class="small-header" aria-hidden="true">
 			<img src="assets/logo.svg">
 			<ul>
-				<li><a href="#">Solutions</a></li>
-				<li><a href="#">Products</a></li>
-				<li><a href="#">Blog</a></li>
-				<li><a href="#">Company</a></li>
-				<li><a href="#">Platform</a></li>
+				{% for item in site.pages %}
+					{% if item.category == "main" %}
+
+						{% assign item_url = item.url | remove_first: "/pages/" %}
+						{% assign item_section = item_url | remove: "/" %}
+						<li class="{% if item.url == page.url %}current{% endif %} {% if item_section == page_section %}current-section{% endif %} {% if item_section == page.category %}current-section{% endif %}">
+							<a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+						</li>
+					{% endif %}
+				{% endfor %}
 			</ul>
 			<ul class="secondary">
 				<li><a href="#">Contact</a></li>
@@ -167,15 +177,10 @@
 		</ul>
 
 
-		<footer>
-			<h3>Let us show you what we can do in just a few hours</h3>
-			<p>
-				Please contact us for a prototyping session.<br>
-				Send us an email at <a href="mailto:info@kjerner.com">info@kjerner.com</a> or use the chatbox.
-			</p>
-		</footer>
 
 
+
+	{% include footer.html %}
 	{% include scripts.html %}
 	</body>
 </html>

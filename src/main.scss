@@ -45,10 +45,19 @@ footer {
 
 section {
 	@include clearFix();
-	max-width: 900px;
+	width: 800px;
+	max-width: calc(100vw - 1rem);
 	margin: 0 auto;
 	margin-top: $ratio*$ratio*1rem;
 	margin-bottom: $ratio*$ratio*$ratio*$ratio*1rem;
+}
+
+h1 {
+	width: 800px;
+	max-width: calc(100vw - 1rem);
+	margin: 0 auto;
+	margin-top: $ratio*$ratio*1rem;
+	margin-bottom: $ratio*$ratio*$ratio*1rem;
 }
 
 
