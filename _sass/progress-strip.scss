@@ -1,0 +1,122 @@
+.progress-strip {
+
+	&:not(.bottom-in-view) {
+		section img {
+			opacity: .5;
+		}
+	}
+
+	ul {
+		text-align: center;
+		background: lighten($orange, 30%);
+		z-index: 0;
+		position: relative;
+		overflow: hidden;
+		font-weight: bold;
+		color: #fff;
+
+		a,
+		a:link,
+		a:hover,
+		a:active,
+		a:visited {
+			color: #fff;
+			text-decoration: none;
+			display: inline-block;
+			height: round($ratio*$ratio*$ratio*$ratio)*1rem;
+			line-height: round($ratio*$ratio*$ratio*$ratio)*1rem;
+			z-index: 1;
+		}
+		+ section img {
+			float: left;
+			max-width: 50%;
+			margin-right: $ratio*1rem;
+			transition: all .2s ease-out;
+		}
+	}
+	li {
+		margin: 0;
+		display: inline-block;
+		position: relative;
+		transition: background-color .6s ease-in-out;
+		+ li {
+			padding-left: $ratio*$ratio*2rem;
+		}
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			width: 100vw;
+			pointer-events: none;
+			z-index: -2;
+			transition: background-color .6s ease-in-out;
+		}
+		&::after {
+			content: "";
+			position: absolute;
+			border: round($ratio*$ratio*$ratio*$ratio)/2*1rem solid transparent;
+			top: 0;
+			width: 0;
+			height: 0;
+			right: -1* round($ratio*$ratio*$ratio*$ratio)*1rem;
+			pointer-events: none;
+			z-index: -2;
+			transition: border-color .6s ease-in-out;
+		}
+		&:not(.active):hover {
+			background-color: lighten($orange, 12%);
+			transition: background-color .2s ease-in-out;
+			&::before {
+				background-color: lighten($orange, 12%);
+				transition: background-color .2s ease-in-out;
+			}
+			&::after {
+				border-left-color: lighten($orange, 12%);
+				transition: border-color .2s ease-in-out;
+			}
+		}
+	}
+	.active {
+		background-color: $orange;
+		&::before {
+			background-color: $orange;
+			z-index: -1;
+		}
+		&::after {
+			border-left-color: $orange;
+			z-index: -1;
+		}
+	}
+	&.blue {
+		ul {
+			background-color: lighten($blue, 30%);
+			+ section img {
+				float: right;
+				margin-right: none;
+				margin-left: $ratio*1rem;
+			}
+		}
+		li {
+			&:not(.active):hover {
+				background-color: lighten($blue, 12%);
+				&::before {
+					background-color: lighten($blue, 12%);
+				}
+				&::after {
+					border-left-color: lighten($blue, 12%);
+				}
+			}
+		}
+		.active {
+			background-color: $blue;
+			&::before {
+				background-color: $blue;
+			}
+			&::after {
+				border-left-color: $blue;
+			}
+		}
+	}
+}

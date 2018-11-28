@@ -4,6 +4,7 @@
 
 @import "theme";
 @import "headers";
+@import "progress-strip";
 
 
 footer {
@@ -30,6 +31,12 @@ footer {
 	color: #fff;
 	background: url('../assets/photo1-blue.jpg') center/cover no-repeat;
 
+	transition: all .6s ease-out;
+	&:not(.top-in-view) {
+		opacity: .8;
+		transform: scale(1.05);
+	}
+
 	&.blue1   { background-image: url('../assets/photo1-blue.jpg'); }
 	&.blue2   { background-image: url('../assets/photo2-blue.jpg'); }
 	&.orange1 { background-image: url('../assets/photo1-orange.jpg'); }
@@ -42,116 +49,6 @@ section {
 	margin: 0 auto;
 	margin-top: $ratio*$ratio*1rem;
 	margin-bottom: $ratio*$ratio*$ratio*$ratio*1rem;
-}
-
-.progress-strip {
-	text-align: center;
-	background: lighten($orange, 30%);
-	color: #fff;
-	font-weight: bold;
-	overflow: hidden;
-	position: relative;
-	z-index: 0;
-	a,
-	a:link,
-	a:hover,
-	a:active,
-	a:visited {
-		color: #fff;
-		text-decoration: none;
-		display: inline-block;
-		height: round($ratio*$ratio*$ratio*$ratio)*1rem;
-		line-height: round($ratio*$ratio*$ratio*$ratio)*1rem;
-		z-index: 1;
-	}
-	+ section img {
-		float: left;
-		max-width: 50%;
-		margin-right: $ratio*1rem;
-	}
-	li {
-		margin: 0;
-		display: inline-block;
-		position: relative;
-		transition: background-color .6s ease-in-out;
-		+ li {
-			padding-left: $ratio*$ratio*2rem;
-		}
-		&::before {
-			content: "";
-			position: absolute;
-			top: 0;
-			bottom: 0;
-			right: 0;
-			width: 100vw;
-			pointer-events: none;
-			z-index: -2;
-			transition: background-color .6s ease-in-out;
-		}
-		&::after {
-			content: "";
-			position: absolute;
-			border: round($ratio*$ratio*$ratio*$ratio)/2*1rem solid transparent;
-			top: 0;
-			width: 0;
-			height: 0;
-			right: -1* round($ratio*$ratio*$ratio*$ratio)*1rem;
-			pointer-events: none;
-			z-index: -2;
-			transition: border-color .6s ease-in-out;
-		}
-		&:not(.active):hover {
-			background-color: lighten($orange, 12%);
-			transition: background-color .2s ease-in-out;
-			&::before {
-				background-color: lighten($orange, 12%);
-				transition: background-color .2s ease-in-out;
-			}
-			&::after {
-				border-left-color: lighten($orange, 12%);
-				transition: border-color .2s ease-in-out;
-			}
-		}
-	}
-	.active {
-		background-color: $orange;
-		&::before {
-			background-color: $orange;
-			z-index: -1;
-		}
-		&::after {
-			border-left-color: $orange;
-			z-index: -1;
-		}
-	}
-	&.blue {
-		background-color: lighten($blue, 30%);
-		+ section img {
-			float: right;
-			margin-right: none;
-			margin-left: $ratio*1rem;
-		}
-		li {
-			&:not(.active):hover {
-				background-color: lighten($blue, 12%);
-				&::before {
-					background-color: lighten($blue, 12%);
-				}
-				&::after {
-					border-left-color: lighten($blue, 12%);
-				}
-			}
-		}
-		.active {
-			background-color: $blue;
-			&::before {
-				background-color: $blue;
-			}
-			&::after {
-				border-left-color: $blue;
-			}
-		}
-	}
 }
 
 

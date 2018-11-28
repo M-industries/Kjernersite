@@ -59,7 +59,7 @@ header {
 
 	transition: top .5s ease-in;
 	top: $ratio*$ratio*$ratio*-1rem;
-	.whoop & {
+	.header-out & {
 		top: 0;
 
 	}
