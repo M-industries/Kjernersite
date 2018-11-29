@@ -17,34 +17,6 @@ footer {
 	color: $grey3;
 }
 
-.banner {
-	height: $ratio*$ratio*$ratio*$ratio*10vh;
-	text-align: center;
-	font-weight: bold;
-	font-size: $ratio*$ratio*$ratio*1vw;
-	line-height: $tight;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	color: #fff;
-	background: url('../assets/photo1-blue.jpg') center/cover no-repeat;
-
-	transition: all .6s ease-out;
-	&:not(.top-in-view) {
-		opacity: .8;
-		transform: scale(1.05);
-	}
-
-	&.blue1   { background-image: url('../assets/photo1-blue.jpg'); }
-	&.blue2   { background-image: url('../assets/photo2-blue.jpg'); }
-	&.orange1 { background-image: url('../assets/photo1-orange.jpg'); }
-	&.orange2 { background-image: url('../assets/photo2-orange.jpg'); }
-
-	article > & {
-		margin: $ratio*$ratio*1rem 0;
-	}
-}
-
 section,
 aside {
 	@include clearFix();
@@ -211,6 +183,7 @@ hr {
 
 
 @import "headers";
+@import "banners";
 @import "progress-strip";
 @import "blog";
 @import "quotes";

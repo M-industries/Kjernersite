@@ -21,3 +21,7 @@ For demo's and workshops:
 
 [info@m-industries.com](mailto:info@m-industries.com)  
 +31 15 268 26 17
+
+
+
+<a class="bloglink" href="/Kjernersite/jekyll/update/2018/11/26/welcome-to-jekyll.html">More about us</a>
