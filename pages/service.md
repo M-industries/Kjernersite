@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Service
+category: secondary
 position: 2
 ---
 

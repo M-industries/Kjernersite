@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Contact
+category: secondary
 position: 1
 ---
 

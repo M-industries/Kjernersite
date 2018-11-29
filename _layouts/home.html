@@ -1,3 +1,5 @@
+{% assign pages = site.pages | sort: "position" %}
+
 <!DOCTYPE html>
 <html lang="en" class="home">
 {% include head.html %}
@@ -8,19 +10,26 @@
 
 			<nav>
 				<ul>
-					{% for item in site.pages %}
+					{% for item in pages %}
 						{% if item.category == "main" %}
 
 							{% assign item_url = item.url | remove_first: "/pages/" %}
-							<li class="{% if item.url == page.url %}current{% endif %}">
+							<li class="{% if item.url == page.url %}current{% endif %}{% if item.title == 'Blog' and page.layout == 'blogpage' %}current{% endif %}">
 								<a href="{{ item.url | relative_url }}">{{ item.title }}</a>
 							</li>
 						{% endif %}
 					{% endfor %}
 				</ul>
 				<ul class="secondary">
-					<li><a href="#">Contact</a></li>
-					<li><a href="#">Service</a></li>
+					{% for item in pages %}
+						{% if item.category == "secondary" %}
+
+							{% assign item_url = item.url | remove_first: "/pages/" %}
+							<li class="{% if item.url == page.url %}current{% endif %}{% if item.title == 'Blog' and page.layout == 'blogpage' %}current{% endif %}">
+								<a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+							</li>
+						{% endif %}
+					{% endfor %}
 				</ul>
 			</nav>
 		</header>
