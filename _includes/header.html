@@ -1,0 +1,30 @@
+{% assign pages = site.pages | sort: "position" %}
+
+<header class="small-header">
+	<nav>
+		<a href="{{ site.baseurl }}/"><img alt="Kjerner" src="{{ 'assets/logo.svg' | relative_url }}"></a>
+		<ul>
+			{% for item in pages %}
+				{% if item.category == "main" %}
+
+					{% assign item_url = item.url | remove_first: "/pages/" %}
+					<li class="{% if item.url == page.url %}current{% endif %}{% if item.title == 'Blog' and page.layout == 'blogpage' %}current{% endif %}">
+						<a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+					</li>
+				{% endif %}
+			{% endfor %}
+
+		</ul>
+		<ul class="secondary">
+			{% for item in pages %}
+				{% if item.category != "main" %}
+
+					{% assign item_url = item.url | remove_first: "/pages/" %}
+					<li class="{% if item.url == page.url %}current{% endif %}{% if item.title == 'Blog' and page.layout == 'blogpage' %}current{% endif %}">
+						<a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+					</li>
+				{% endif %}
+			{% endfor %}
+		</ul>
+	</nav>
+</header>

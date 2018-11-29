@@ -2,10 +2,14 @@
 layout: page
 title: Blog
 category: main
+position: 3
 ---
 
 In Alan data models drive everything.
 The unique application modeling language allows you to write a model that generates both a database design and a user interface. It's a fast way to create and iterate on your application, without sacrificing data correctness.
+
+## Cases And Presentations
+{% include bloglist.html %}
 
 
 ## M-industries

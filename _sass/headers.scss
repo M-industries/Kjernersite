@@ -1,4 +1,7 @@
 nav li {
+	&.current {
+		font-weight: bold;
+	}
 	a {
 		transition: border-color .6s ease-in-out;
 		display: inline-block;
@@ -25,7 +28,7 @@ nav li {
 
 header {
 
-	.home & {
+	.home &:not(.small-header) {
 		max-width: 900px;
 		margin: 0 auto;
 		padding-top: $ratio*$ratio*$ratio*$ratio*1rem;
@@ -53,7 +56,7 @@ header {
 
 }
 
-.small-header {
+.small-header nav {
 	background: #fff;
 	position: fixed;
 	z-index: 9;
@@ -117,6 +120,6 @@ header {
 	}
 }
 
-.page header + * {
+.page {
 	padding-top: 1rem*$ratio*$ratio + 1rem/$ratio;
 }

@@ -2,6 +2,7 @@
 layout: page
 title: Platform
 category: main
+position: 5
 ---
 
 In Alan data models drive everything.

@@ -1,0 +1,51 @@
+blockquote {
+	float: right;
+	position: relative;
+	margin: 1rem 0 1rem $ratio*1rem;
+	color: #fff;
+	font-weight: bold;
+	font-size: $ratio*1rem;
+	line-height: $tight;
+	background: url('../assets/photo1-blue.jpg') center/cover no-repeat;
+	padding: $ratio*$ratio*1rem;
+	padding-bottom: calc(#{round($ratio*$ratio)*1rem} + 48px);
+	width: 40%;
+
+	article > & {
+		max-width: 30rem;
+		float: none;
+		margin: $ratio*$ratio*1rem auto;
+	}
+
+	span {
+		text-align: right;
+		display: block;
+		margin-top: 1rem;
+		font-style: italic;
+		font-weight: normal;
+	}
+	&::after {
+		content: "";
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		height: 48px;
+		background: url('../assets/balloon-pointer.svg') left bottom no-repeat;
+		background-size: 1600px 48px;
+	}
+
+	transition: all .3s ease-out;
+	&:not(.top-in-view) {
+		opacity: 0;
+		transform: scale(.2) rotate(-15deg);
+	}
+	&.top-in-view {
+		opacity: .5;
+		transform: scale(.6) rotate(0deg);
+	}
+	&.bottom-in-view {
+		opacity: 1;
+		transform: scale(1) rotate(0deg);
+	}
+}

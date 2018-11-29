@@ -3,8 +3,6 @@
 ---
 
 @import "theme";
-@import "headers";
-@import "progress-strip";
 
 
 footer {
@@ -24,7 +22,7 @@ footer {
 	text-align: center;
 	font-weight: bold;
 	font-size: $ratio*$ratio*$ratio*1vw;
-	line-height: 1.16;
+	line-height: $tight;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -41,9 +39,14 @@ footer {
 	&.blue2   { background-image: url('../assets/photo2-blue.jpg'); }
 	&.orange1 { background-image: url('../assets/photo1-orange.jpg'); }
 	&.orange2 { background-image: url('../assets/photo2-orange.jpg'); }
+
+	article > & {
+		margin: $ratio*$ratio*1rem 0;
+	}
 }
 
-section {
+section,
+aside {
 	@include clearFix();
 	width: 800px;
 	max-width: calc(100vw - 1rem);
@@ -52,13 +55,17 @@ section {
 	margin-bottom: $ratio*$ratio*$ratio*$ratio*1rem;
 }
 
-h1 {
+aside {
+	color: $grey3;
+}
+
+article > :not(div) {
 	width: 800px;
 	max-width: calc(100vw - 1rem);
-	margin: 0 auto;
-	margin-top: $ratio*$ratio*1rem;
-	margin-bottom: $ratio*$ratio*$ratio*1rem;
+	margin-left: auto;
+	margin-right: auto;
 }
+
 
 
 .logos {
@@ -74,3 +81,136 @@ h1 {
 		width: 100%;
 	}
 }
+
+
+
+
+html,
+body {
+	color: $black;
+	font-size: 14px;
+	line-height: $ratio;
+	font-family: "Montserrat", sans-serif;
+	width: 100%;
+	height: 100%;
+}
+
+h1 {
+	font-size: $ratio*$ratio*1em;
+	width: 800px;
+	max-width: calc(100vw - 1rem);
+	margin: $ratio*$ratio*$ratio*1rem auto $ratio*$ratio*1rem auto;
+}
+h2 {
+	font-size: 1em*$ratio;
+	margin: 1em*$ratio*$ratio 0 1em/$ratio/$ratio 0;
+	&.centered {
+		color: $grey5;
+		text-align: center;
+	}
+}
+h3 {
+	font-size: 1em;
+	margin: 1em 0 0 0;
+}
+
+small {
+	font-size: 1em/$ratio;
+	line-height: 2;
+}
+
+ol,
+ul {
+	margin: 1em auto 1em*$ratio auto;
+	padding: 0;
+	li {
+		margin-bottom: 1em/$ratio/$ratio;
+	}
+	nav & {
+		margin-top: 0;
+		li {
+			margin-bottom: 0;
+		}
+	}
+
+	ol,
+	ul {
+		margin-left: 1em*$ratio;
+		margin-top: .5em;
+	}
+}
+
+img {
+	max-width: 100%;
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+	color: #2f59bc;
+	text-decoration: none;
+}
+a:hover,
+a:active {
+	text-decoration: underline;
+}
+
+a.button {
+	background: $orange;
+	border: 1px solid darken($orange, 8%);
+	border-radius: 6px;
+	color: #fff;
+	padding: 1em/$ratio/$ratio/$ratio/$ratio 1em/$ratio/$ratio;
+	text-shadow: 1px 1px 4px transparentize($grey2, .7);
+	box-shadow: 1px 1px 4px transparentize($grey2, .7);
+	position: relative;
+	@include breathe(background);
+	&:hover,
+	&:active {
+		text-decoration: none;
+		background: darken($orange, 8%);
+	}
+	&:active {
+		top: 1px;
+		box-shadow: inset 1px 1px 2px transparentize($grey2, .7);
+	}
+}
+
+pre {
+	line-height: $tight;
+	background: $grey7;
+	margin: 0;
+	padding: 1em/$ratio/$ratio 1em/$ratio;
+	box-sizing: border-box;
+}
+code {
+	font-family: 'Ubuntu Mono', monospace;
+	background: $grey7;
+	padding: 0 1ex/$ratio;
+	p > & {
+		white-space: nowrap;
+	}
+	pre & {
+		background: none;
+		border-radius: 0;
+		padding: 0;
+		white-space: pre;
+	}
+}
+code .punctuation { color: $grey1; }
+code .string      { color: $blue; }
+code .operator    { color: $orange; }
+
+hr {
+	margin: 0 1rem/$ratio;
+	border: none;
+	border-bottom: 2px solid $orange;
+}
+
+
+@import "headers";
+@import "progress-strip";
+@import "blog";
+@import "quotes";

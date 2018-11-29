@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700");
-
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono');
 
 
 $black: #040404;
@@ -11,7 +11,8 @@ $grey2: lighten($black, 28%);
 $grey3: lighten($black, 36%);
 $grey4: lighten($black, 48%);
 $grey5: lighten($black, 64%);
-$grey6: lighten($black, 72%);
+$grey6: lighten($black, 80%);
+$grey7: lighten($black, 92%);
 
 $green: #22c546;
 $red: #ff3e29;
@@ -22,6 +23,7 @@ $brand-color: #374996;
 
 
 $ratio: 1.618; // golden ratio
+$tight: 1.16;
 $fat: 1rem/$ratio 1rem 1rem/$ratio 1rem;
 
 $base-width: 45rem;              // = 720 / 16px
@@ -59,176 +61,4 @@ $hero-size: $base-width + 2 * 5rem;
 	&:after {
 	    clear: both;
 	}
-}
-
-
-html,
-body {
-	color: $black;
-	font-size: 14px;
-	line-height: $ratio;
-	font-family: "Montserrat", sans-serif;
-	width: 100%;
-	height: 100%;
-}
-
-h1 {
-	font-size: $ratio*$ratio*1em;
-	margin: 1em 0 1em/$ratio 0;
-}
-h2 {
-	font-size: 1em*$ratio;
-	margin: 1em*$ratio*$ratio 0 1em/$ratio/$ratio 0;
-	&.centered {
-		color: $grey5;
-		text-align: center;
-	}
-}
-h3 {
-	font-size: 1em;
-	margin: 1em 0 0 0;
-}
-
-small {
-	font-size: 1em/$ratio;
-	line-height: 2;
-}
-
-ol,
-ul {
-	margin: 1em auto 1em*$ratio auto;
-	padding: 0;
-	li {
-		margin-bottom: 1em/$ratio/$ratio;
-	}
-	nav & {
-		margin-top: 0;
-		li {
-			margin-bottom: 0;
-		}
-	}
-
-	ol,
-	ul {
-		margin-left: 1em*$ratio;
-		margin-top: .5em;
-	}
-}
-
-img {
-	max-width: 100%;
-}
-
-a,
-a:link,
-a:visited,
-a:hover,
-a:active {
-	color: #2f59bc;
-	text-decoration: none;
-}
-a:hover,
-a:active {
-	text-decoration: underline;
-}
-
-a.button {
-	background: $orange;
-	border: 1px solid darken($orange, 8%);
-	border-radius: 6px;
-	color: #fff;
-	padding: 1em/$ratio/$ratio/$ratio/$ratio 1em/$ratio/$ratio;
-	text-shadow: 1px 1px 4px transparentize($grey2, .7);
-	box-shadow: 1px 1px 4px transparentize($grey2, .7);
-	position: relative;
-	@include breathe(background);
-	&:hover,
-	&:active {
-		text-decoration: none;
-		background: darken($orange, 8%);
-	}
-	&:active {
-		top: 1px;
-		box-shadow: inset 1px 1px 2px transparentize($grey2, .7);
-	}
-}
-
-blockquote {
-	float: right;
-	position: relative;
-	margin: 1rem 0 1rem $ratio*1rem;
-	color: #fff;
-	font-weight: bold;
-	font-size: $ratio*1rem;
-	line-height: 1.16;
-	background: url('../assets/photo1-blue.jpg') center/cover no-repeat;
-	padding: $ratio*$ratio*1rem;
-	padding-bottom: calc(#{round($ratio*$ratio)*1rem} + 48px);
-	width: 40%;
-	span {
-		text-align: right;
-		display: block;
-		margin-top: 1rem;
-		font-style: italic;
-		font-weight: normal;
-	}
-	&::after {
-		content: "";
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		height: 48px;
-		background: url('../assets/balloon-pointer.svg') left bottom no-repeat;
-		background-size: 1600px 48px;
-	}
-
-	transition: all .3s ease-out;
-	&:not(.top-in-view) {
-		opacity: 0;
-		transform: scale(.2) rotate(-15deg);
-	}
-	&.top-in-view {
-		opacity: .5;
-		transform: scale(.6) rotate(0deg);
-	}
-	&.bottom-in-view {
-		opacity: 1;
-		transform: scale(1) rotate(0deg);
-	}
-}
-
-
-pre {
-	line-height: 1;
-	background: $grey6;
-	margin: 0;
-	padding: 1em/$ratio/$ratio 1em/$ratio;
-	border-radius: 4px;
-	box-sizing: border-box;
-}
-code {
-	font-family: monospace;
-	font-size: 0.8em;
-	background: $grey6;
-	border-radius: 4px;
-	padding: 0 1ex/$ratio;
-	p > & {
-		white-space: nowrap;
-	}
-	pre & {
-		background: none;
-		border-radius: 0;
-		padding: 0;
-		white-space: pre;
-	}
-}
-code .punctuation { color: $grey1; }
-code .string      { color: $blue; }
-code .operator    { color: $orange; }
-
-hr {
-	margin: 0 1rem/$ratio;
-	border: none;
-	border-bottom: 2px solid $orange;
 }

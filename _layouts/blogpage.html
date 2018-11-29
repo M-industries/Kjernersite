@@ -1,12 +1,19 @@
 <!DOCTYPE html>
-<html lang="en" class="page">
+<html lang="en" class="page blog">
 	{% include head.html %}
 	<body>
 
+
 		<article>
 			<h1>{{ page.title }}</h1>
-			<section>{{ content }}</section>
+			{{ content }}
 		</article>
+
+		<aside>
+			<h2>More articles</h2>
+			{% include bloglist.html %}
+		</aside>
+
 
 		{% include footer.html %}
 		{% include header.html %}
