@@ -5,6 +5,7 @@
 		justify-content: center;
 		font-weight: bold;
 		width: $ratio*$ratio*10rem;
+		max-width: 100%;
 		padding: 1rem;
 		background: url('../assets/photo2-orange.jpg') center/cover no-repeat;
 		position: relative;

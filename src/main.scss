@@ -21,7 +21,7 @@ section,
 aside {
 	@include clearFix();
 	width: 800px;
-	max-width: calc(100vw - 1rem);
+	max-width: calc(100% - #{$ratio*$ratio*1rem});
 	margin: 0 auto;
 	margin-top: $ratio*$ratio*1rem;
 	margin-bottom: $ratio*$ratio*$ratio*$ratio*1rem;
@@ -33,7 +33,7 @@ aside {
 
 article > :not(div) {
 	width: 800px;
-	max-width: calc(100vw - 1rem);
+	max-width: calc(100% - #{$ratio*$ratio*1rem});
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -70,7 +70,7 @@ body {
 h1 {
 	font-size: $ratio*$ratio*1em;
 	width: 800px;
-	max-width: calc(100vw - 1rem);
+	max-width: calc(100% - #{$ratio*$ratio*1rem});
 	margin: $ratio*$ratio*$ratio*1rem auto $ratio*$ratio*1rem auto;
 }
 h2 {
