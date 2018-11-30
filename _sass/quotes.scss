@@ -50,8 +50,12 @@ blockquote {
 	}
 
 	@media screen and (max-width: $breakpoint) {
-		float: none;
-		margin: 1rem*$ratio auto;
-		width: 80%;
+		&,
+		article > & {
+			float: none;
+			margin: 1rem*$ratio auto;
+			width: 80%;
+			max-width: 80%;
+		}
 	}
 }
