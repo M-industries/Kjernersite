@@ -22,3 +22,9 @@ window.onscroll = function(){
 	}
 	checkAnimelsInView();
 };
+
+
+
+function toggleMenu() {
+	document.getElementById("topnav").classList.toggle("active");
+}

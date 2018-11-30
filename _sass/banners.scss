@@ -9,6 +9,7 @@
 	justify-content: center;
 	color: #fff;
 	background: url('../assets/photo1-blue.jpg') center/cover no-repeat;
+	padding: 0 $ratio*1rem;
 
 	transition: all .6s ease-out;
 	&:not(.top-in-view) {
@@ -29,5 +30,9 @@
 
 	article > & {
 		margin: $ratio*$ratio*1rem 0;
+	}
+
+	@media screen and (max-width: $breakpoint) {
+		font-size: $ratio*$ratio*1rem;
 	}
 }

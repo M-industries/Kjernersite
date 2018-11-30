@@ -1,8 +1,16 @@
 {% assign pages = site.pages | sort: "position" %}
 
-<header class="small-header">
+<header id="topnav" class="small-header">
 	<nav>
 		<a href="{{ site.baseurl }}/"><img alt="Kjerner" src="{{ 'assets/logo.svg' | relative_url }}"></a>
+		<button class="menu-toggle" onclick="toggleMenu()">
+			<svg height="100%" version="1.1" width="14" height="14" viewBox="0 0 14 14" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink">
+				<rect height="3" width="14" x="0" y="0"/>
+				<rect height="3" width="14" x="0" y="5.5"/>
+				<rect height="3" width="14" x="0" y="11"/>
+			</svg>
+		</button>
+
 		<ul>
 			{% for item in pages %}
 				{% if item.category == "main" %}
@@ -13,11 +21,10 @@
 					</li>
 				{% endif %}
 			{% endfor %}
-
 		</ul>
 		<ul class="secondary">
 			{% for item in pages %}
-				{% if item.category != "main" %}
+				{% if item.category == "secondary" %}
 
 					{% assign item_url = item.url | remove_first: "/pages/" %}
 					<li class="{% if item.url == page.url %}current{% endif %}{% if item.title == 'Blog' and page.layout == 'blogpage' %}current{% endif %}">

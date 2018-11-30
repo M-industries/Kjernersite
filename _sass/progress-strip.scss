@@ -119,4 +119,15 @@
 			}
 		}
 	}
+
+
+	@media screen and (max-width: $breakpoint) {
+		li:not(.active) {
+			display: none;
+		}
+		li.active {
+			margin-right: round($ratio*$ratio*$ratio*$ratio)/2*1rem;
+			padding-left: 0;
+		}
+	}
 }

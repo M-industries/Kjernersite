@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700");
 @import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono');
 
-
 $black: #040404;
 $blue: #05BDFF;
 $orange: #D86531;
@@ -21,14 +20,11 @@ $teal: #1db2a2;
 
 $brand-color: #374996;
 
-
 $ratio: 1.618; // golden ratio
 $tight: 1.16;
-$fat: 1rem/$ratio 1rem 1rem/$ratio 1rem;
 
-$base-width: 45rem;              // = 720 / 16px
-$breakpoint: $base-width + 5rem; // + 80px
-$hero-size: $base-width + 2 * 5rem;
+$breakpoint: 800px;
+$breakpoint-small: 500px;
 
 * {
 	box-sizing: border-box;
@@ -50,7 +46,6 @@ $hero-size: $base-width + 2 * 5rem;
 		transition: $property .05s ease-in-out;
 	}
 }
-
 @mixin clearFix() {
 	&:before,
 	&:after {

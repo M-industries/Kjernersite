@@ -1,7 +1,7 @@
 blockquote {
 	float: right;
 	position: relative;
-	margin: 1rem 0 1rem $ratio*1rem;
+	margin: 0 0 1rem $ratio*1rem;
 	color: #fff;
 	font-weight: bold;
 	font-size: $ratio*1rem;
@@ -47,5 +47,11 @@ blockquote {
 	&.bottom-in-view {
 		opacity: 1;
 		transform: scale(1) rotate(0deg);
+	}
+
+	@media screen and (max-width: $breakpoint) {
+		float: none;
+		margin: 1rem*$ratio auto;
+		width: 80%;
 	}
 }
