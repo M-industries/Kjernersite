@@ -65,7 +65,7 @@ header {
 	}
 }
 
-.small-header nav {
+.small-header {
 	background: #fff;
 	position: fixed;
 	z-index: 9;
@@ -74,10 +74,9 @@ header {
 	top: 0;
 	line-height: 2rem;
 
-	&::after {
-	    content: "";
+	> .bar {
 	    display: block;
-	    background: url('../assets/photo1-blue.jpg') center/cover no-repeat ;
+	    background: url('../assets/progress-blue.jpg') left bottom/1920px 5px repeat-x;
 	    height: 5px;
 	    position: absolute;
 	    bottom: -5px;
@@ -94,38 +93,40 @@ header {
 		top: 0;
 	}
 
-	display: flex;
-	align-items: flex-start;
-
-	> a:first-child,
-	img {
-		height: 2rem;
-	}
-
-	ul {
-		display: inline-block;
+	nav {
 		display: flex;
-		margin: 0;
-		flex: 1;
-		&:first-of-type {
-			margin-left: $ratio*$ratio*1rem;
+		align-items: flex-start;
+
+		> a:first-child,
+		img {
+			height: 2rem;
 		}
-	}
-	li {
-		display: inline-block;
-	}
-	li + li {
-		margin-left: $ratio*1rem;
-	}
-	.secondary {
-		float: right;
-		flex: 0;
-		a,
-		a:link,
-		a:hover,
-		a:active,
-		a:visited {
-			color: $grey3;
+
+		ul {
+			display: inline-block;
+			display: flex;
+			margin: 0;
+			flex: 1;
+			&:first-of-type {
+				margin-left: $ratio*$ratio*1rem;
+			}
+		}
+		li {
+			display: inline-block;
+		}
+		li + li {
+			margin-left: $ratio*1rem;
+		}
+		.secondary {
+			float: right;
+			flex: 0;
+			a,
+			a:link,
+			a:hover,
+			a:active,
+			a:visited {
+				color: $grey3;
+			}
 		}
 	}
 }
@@ -146,9 +147,9 @@ header {
 
 @media screen and (max-width: $breakpoint) {
 	.small-header {
+		height: $ratio*$ratio*1rem + 1rem/$ratio;
 		nav {
 			display: block;
-			height: $ratio*$ratio*1rem + 1rem/$ratio;
 			img {
 				position: absolute;
 				top: 1rem/$ratio;
@@ -169,17 +170,17 @@ header {
 			}
 		}
 		&.active {
+			top: 0;
+			bottom: 5px;
+			height: auto;
+			padding-top: 1rem*$ratio*$ratio*$ratio;
 			nav {
-				top: 0;
-				bottom: 5px;
-				height: auto;
-				padding-top: 1rem*$ratio*$ratio*$ratio;
-			}
-			ul {
-				display: block;
-			}
-			.secondary {
-				float: none;
+				ul {
+					display: block;
+				}
+				.secondary {
+					float: none;
+				}
 			}
 		}
 	}
@@ -189,4 +190,12 @@ header {
 		top: 1rem/$ratio;
 		right: 1rem/$ratio;
 	}
+}
+
+.bar .progress {
+	background: url('../assets/progress-orange.jpg') left bottom/1920px 5px repeat-x;
+	height: 100%;
+	width: 0;
+	max-width: 100%;
+	transition: width .6s ease-in-out;
 }
