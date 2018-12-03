@@ -1,3 +1,12 @@
+{% capture readtime %}
+	{% comment %}
+	Medium tells us average is about 265 words per minute:
+	https://help.medium.com/hc/en-us/articles/214991667-Read-time
+	{% endcomment %}
+
+	{{ page.content | number_of_words | divided_by: 265 | ceil | plus:'1' }}
+{% endcapture %}
+
 <!DOCTYPE html>
 <html lang="en" class="page blog">
 	{% include head.html %}
@@ -6,14 +15,36 @@
 
 		<article>
 			<h1>{{ page.title }}</h1>
-			{{ content }}
+			<dl class="blog-meta">
+				{% if page.author %}
+					<dt class="author">By</dt>
+					<dd>{{ page.author }}</dd>
+				{% endif %}
+
+				<br>
+				<dt class="readtime">Reading Time</dt>
+				<dd>{{ readtime }} min.</dd>
+
+				{% comment %}
+				not sure if we're going to use this yet
+				<dt class="categories">Categories</dt>
+				<dd>
+					<ul>
+					{% for category in page.categories %}
+						<li>{{ category }}</li>
+					{% endfor %}
+					</ul>
+				</dd>
+				{% endcomment %}
+			</dl>
+
+			{{ page.content }}
 		</article>
 
 		<aside>
 			<h2>More articles</h2>
 			{% include bloglist.html %}
 		</aside>
-
 
 		{% include footer.html %}
 		{% include header.html %}
