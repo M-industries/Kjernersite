@@ -1,0 +1,14 @@
+<div class="swiper-container">
+	<div class="swiper-wrapper">
+
+		{% for slide in page.slides %}
+		<div class="swiper-slide">
+			<img src="{{ slide | relative_url }}">
+		</div>
+		{% endfor %}
+
+	</div>
+	<div class="swiper-pagination"></div>
+	<div class="swiper-button-prev"></div>
+	<div class="swiper-button-next"></div>
+</div>

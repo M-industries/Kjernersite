@@ -4,11 +4,21 @@ title: "Welcome to Jekyll!"
 author: Rick van der Arend
 date: 2018-11-26 09:37:25 +0100
 categories: [jekyll, update]
+slides: [
+	'assets/photo/1.jpg',
+	'assets/photo/2.jpg',
+	'assets/photo/3.jpg',
+	'assets/photo/4.jpg',
+	'assets/photo/5.jpg',
+	'assets/photo/6.jpg'
+]
 ---
 
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
-![]({{ 'assets/design-session.jpg' | relative_url }})
+{% include slideshow.html %}
+
+![]({{'assets/design-session.jpg'|relative_url}})
 
 To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
 

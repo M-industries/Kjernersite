@@ -1,0 +1,48 @@
+.swiper-container {
+	width: 100%;
+	height: 60vh;
+	background: $orange;
+
+	.swiper-slide {
+		text-align: center;
+	}
+	img {
+		max-width: $breakpoint;
+	}
+	.swiper-pagination-bullet-active {
+		background-color: #fff;
+	}
+	.swiper-button-prev,
+	.swiper-button-next {
+		background: none;
+		&::after {
+			content: "";
+			position: absolute;
+			border: 1rem solid transparent;
+			border-left-color: $blue;
+			top: 50%;
+			width: 0;
+			height: 0;
+			right: 0;
+			margin-top: -1rem;
+			transition: border-color .6s ease-in-out;
+		}
+		&:hover::after,
+		&:focus::after,
+		&:active::after {
+			border-left-color: white;
+		}
+	}
+	.swiper-button-prev {
+		&::after {
+			border-left-color: transparent;
+			border-right-color: $blue;
+		}
+		&:hover::after,
+		&:focus::after,
+		&:active::after {
+			border-left-color: transparent;
+			border-right-color: white;
+		}
+	}
+}

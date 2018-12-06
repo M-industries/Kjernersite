@@ -1,3 +1,5 @@
+/* global Swiper */
+
 var h = document.querySelector("header");
 var h_height = h.clientHeight;
 var animels = document.querySelectorAll(".animel, blockquote");
@@ -24,8 +26,11 @@ function checkProgress(){
 	}
 }
 
-checkAnimelsInView();
-checkProgress();
+// used by the togglebutton onclick attribute
+function toggleMenu() {
+	document.getElementById("topnav").classList.toggle("active");
+}
+
 
 window.onscroll = function(){
 	if (window.scrollY > h_height) {
@@ -45,10 +50,19 @@ window.onresize = function(){
 	checkProgress();
 };
 
+window.onload = function () {
 
+	checkAnimelsInView();
+	checkProgress();
 
-
-// used by the togglebutton onclick attribute
-function toggleMenu() {
-	document.getElementById("topnav").classList.toggle("active");
-}
+	var mySwiper = new Swiper (".swiper-container", {
+		loop: true,
+		pagination: {
+			el: ".swiper-pagination",
+		},
+		navigation: {
+			nextEl: ".swiper-button-next",
+			prevEl: ".swiper-button-prev",
+		},
+	});
+};
