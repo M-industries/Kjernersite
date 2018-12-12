@@ -151,3 +151,58 @@ a.bloglink {
 		}
 	}
 }
+
+
+#anchor-list {
+	@media (max-width: $breakpoint*1.5) {
+		display: none;
+	}
+	position: fixed;
+	margin-top: 0;
+	margin-left: $ratio*$ratio*1rem;
+	top: $ratio*$ratio*$ratio*$ratio*1rem;
+	z-index: 4;
+	font-size: 1rem/$tight;
+
+	left: calc(50vw + #{$breakpoint/2});
+
+	a {
+		display: block;
+		position: relative;
+	}
+	a::before {
+		content: "";
+		display: block;
+		width: 1em/$ratio;
+		height: 1em/$ratio;
+		border: 1px solid $blue;
+		border-radius: 100%;
+		position: absolute;
+		left: -1em*$tight;
+		top: .5em;
+	}
+	a:first-child {
+		font-weight: bold;
+	}
+
+	a,
+	a:link,
+	a:hover,
+	a:active,
+	a:visited {
+		text-decoration: none;
+		color: $grey3;
+	}
+	a:hover,
+	a:active {
+		color: $orange;
+		text-decoration: underline;
+	}
+
+	a:first-child,
+	a.anchor-in-view {
+		&::before {
+			background: transparentize($blue, 0.5);
+		}
+	}
+}

@@ -4,6 +4,8 @@ var h = document.querySelector("header");
 var h_height = h.clientHeight;
 var animels = document.querySelectorAll(".animel, blockquote");
 var article = document.querySelector("article");
+var anchors = [];
+var anchor_list = document.getElementById("anchor-list");
 var progress = document.querySelector(".bar .progress");
 var max = 0;
 if (article) {
@@ -20,6 +22,8 @@ function checkAnimelsInView(){
 		}
 	});
 }
+
+
 function checkProgress(){
 	if (progress) {
 		progress.style.width = Math.ceil(100 * (max - (article.getBoundingClientRect().bottom - document.documentElement.clientHeight)) / max) + "%";
@@ -32,14 +36,46 @@ function toggleMenu() {
 }
 
 
+function buildAnchorList() {
+	anchors = document.querySelectorAll("article h2");
+	if (anchors && anchor_list) {
+		anchors.forEach(function(a) {
+			if (! a.hasAttribute("id")) {
+				return;
+			}
+
+			var link = document.createElement("a");
+			link.setAttribute("href", "#" + a.getAttribute("id"));
+			link.textContent = a.textContent;
+			anchor_list.appendChild(link);
+		});
+	}
+}
+
+function checkAnchorLocation() {
+	if (anchors && anchor_list) {
+		anchors.forEach(function(a) {
+			var link = document.querySelector("[href='#" + a.getAttribute("id") + "']");
+			if (link && link.classList && a.getBoundingClientRect().bottom < document.documentElement.clientHeight) {
+				link.classList.add("anchor-in-view");
+			} else {
+				link.classList.remove("anchor-in-view");
+			}
+		});
+	}
+}
+
+
 window.onscroll = function(){
+	checkAnimelsInView();
+	checkProgress();
+	checkAnchorLocation();
+
 	if (window.scrollY > h_height) {
 		document.body.classList.add("header-out");
 	} else {
 		document.body.classList.remove("header-out");
 	}
-	checkAnimelsInView();
-	checkProgress();
 };
 
 window.onresize = function(){
@@ -48,12 +84,14 @@ window.onresize = function(){
 	}
 	checkAnimelsInView();
 	checkProgress();
+	checkAnchorLocation();
 };
 
 window.onload = function () {
-
 	checkAnimelsInView();
 	checkProgress();
+	buildAnchorList();
+	checkAnchorLocation();
 
 	var mySwiper = new Swiper (".swiper-container", {
 		loop: true,
