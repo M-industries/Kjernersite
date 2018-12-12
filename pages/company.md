@@ -5,23 +5,18 @@ category: main
 position: 4
 ---
 
-In Alan data models drive everything.
-The unique application modeling language allows you to write a model that generates both a database design and a user interface. It's a fast way to create and iterate on your application, without sacrificing data correctness.
+
+Kjerner has a new approach to building software solutions. To see it is to believe it, and we can show you amazing things in only a few hours.
 
 
-## M-industries
-M-industries built the Alan platform to help international businesses like Tata Steel and Hydro improve data quality and upgrade their legacy systems.
-We're based near the campus of Delft University of Technology and you can find us here:
+## Enterprise-ready Software
 
-- [M-industries.com](https://m-industries.com)
-- [Linkedin](https://www.linkedin.com/company/m-industries/)
-- [GitHub](https://github.com/M-industries)
+We use proven technology. Software built on the [Alan platform](https://alan-platform.com) is already supporting the daily operations of companies throughout Europe.
 
-For demo's and workshops:
+## Made Lightning Fast
 
-[info@m-industries.com](mailto:info@m-industries.com)  
-+31 15 268 26 17
+The alan platform allows us to write software at lightning speed. You can use your software while prototyping and gain insights to make it smarter.
 
+## Ready To Use
 
-
-<a class="bloglink" href="/Kjernersite/jekyll/update/2018/11/26/welcome-to-jekyll.html">More about us</a>
+When the design session is over, your software is ready to use. Only when you decide to start using it, you will start paying for it.
