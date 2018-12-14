@@ -53,5 +53,3 @@ Have some Excel sheets you'd like to see disappear?
 Request a demo and see with your own eyes how we create easy to use programs without programmers.
 You'll be able to read and understand how we do it too,
 so you can get your hands dirty in no time.
-
-{% include contact.md %}
