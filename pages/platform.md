@@ -5,6 +5,7 @@ category: main
 position: 4
 permalink: /platform/
 
+---
 
 <a name="info"></a>
 We spent 15 years researching a new way of building software,
