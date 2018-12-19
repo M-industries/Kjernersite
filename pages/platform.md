@@ -5,20 +5,11 @@ category: main
 position: 4
 permalink: /platform/
 
-anchors:
-  - label: Kjerner
-    name: info
-  - label: Alan
-    name: alan
-  - label: Learn it
-    name: learn
----
 
 <a name="info"></a>
 We spent 15 years researching a new way of building software,
 not through programming but completely driven by data models.
-
-<p class="intro">The Alan platform is different.</p>
+The software M-industries and Kjerner came up with is different.
 
 We call our programming language and technology **"Alan"**
 
