@@ -2,9 +2,7 @@
 layout: page
 title: Platform
 category: main
-position: 4
-permalink: /platform/
-
+position: 3
 ---
 
 <a name="info"></a>

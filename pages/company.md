@@ -1,8 +1,8 @@
 ---
 layout: page
 title: Company
-category: main
-position: 4
+category: secondary
+position: 2
 ---
 
 
