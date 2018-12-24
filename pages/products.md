@@ -5,6 +5,8 @@ category: main
 position: 2
 ---
 
+Using our platform, we have already built some products: an ERP system, targeted at scale-ups and Visual Factory, a manufacturing execution system (MES) for production shopfloors.
+
 <a name="erp-next"></a>
 ## ERP-Next
 We offer a unique ERP system, capable of fully supporting scale-ups during their way up.
