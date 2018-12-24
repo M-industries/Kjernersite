@@ -6,7 +6,7 @@ position: 2
 ---
 
 <a name="erp-next"></a>
-##ERP-Next
+## ERP-Next
 We offer a unique ERP system, capable of fully supporting scale-ups during their way up.
 
 As a business aiming to scale up, getting your core business processes fully supported by software is essential.
