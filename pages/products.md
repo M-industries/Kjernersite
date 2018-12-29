@@ -22,6 +22,10 @@ With a solution using our ERP product, you will have the possibility to:
 So get your finances, projects and products, sales, inventory and purchases fully supported, so you can focus on improving your business. Have us demonstrate you how we do that by contacting us at erpnext@kjerner.com
 
 <a name="visual-factory"></a>
+## Visual Factory
+
+> "We are able to get more from our resources than we thought was possible. And we are just getting started."<span>Frank Iepema<br>Managing Director Hydro Hungary</span>
+
 All the information you
 need to make decisions and improve OEE, based on accurate
 and up to date data. Live charts and reports means you can
