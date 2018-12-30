@@ -7,8 +7,13 @@ position: 2
 
 Using our platform, we have already built some products: an ERP system, targeted at scale-ups and Visual Factory, a manufacturing execution system (MES) for production shopfloors.
 
-<a name="erp-next"></a>
-## ERP-Next
+<!-- <a name="erp-next"></a>
+## ERP-Next -->
+
+<div class="banner animel blue3">
+	<span>ERP-Next - The ERP system built for scale-ups</span>
+</div>
+
 We offer a unique ERP system, capable of fully supporting scale-ups during their way up.
 
 As a business aiming to scale up, getting your core business processes fully supported by software is essential.
@@ -21,8 +26,12 @@ With a solution using our ERP product, you will have the possibility to:
 
 So get your finances, projects and products, sales, inventory and purchases fully supported, so you can focus on improving your business. Have us demonstrate you how we do that by contacting us at erpnext@kjerner.com
 
-<a name="visual-factory"></a>
-## Visual Factory
+<!-- <a name="visual-factory"></a>
+## Visual Factory -->
+
+<div class="banner animel orange4">
+	<span>Visual Factory - Streamline all production processes to reduce waste.</span>
+</div>
 
 > "We are able to get more from our resources than we thought was possible. And we are just getting started."<span>Frank Iepema<br>Managing Director Hydro Hungary</span>
 
@@ -31,9 +40,12 @@ need to make decisions and improve OEE, based on accurate
 and up to date data. Live charts and reports means you can
 get updates when you need them.
 
-<p class="intro">
-	Streamline all production processes to reduce waste.
-</p>
+Visual Factory has been developed over the last six years.
+The enabling platform has been under development for over a
+decade already and powers several applications beyond Visual
+Factory. The underlying foundations have been researched
+extensively in collaboration with the Delft University of
+Technology.
 
 
 <a name="visual-factory-features"></a>
@@ -53,13 +65,6 @@ get updates when you need them.
 
 - Real time information about production progress,
 	<br>Helping you improve your schedule over time.
-
-Visual Factory has been developed over the last six years.
-The enabling platform has been under development for over a
-decade already and powers several applications beyond Visual
-Factory. The underlying foundations have been researched
-extensively in collaboration with the Delft University of
-Technology.
 
 
 <a name="visual-factory-benefits"></a>
