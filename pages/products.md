@@ -10,7 +10,7 @@ Using our platform, we have already built two products: an ERP system, targeted 
 <!-- <a name="erp-next"></a>
 ## ERP-Next -->
 <br>
-<div class="banner animel blue3">
+<div class="banner animel blue1">
 	<span>ERP-Next</span>
 </div>
 <br>
@@ -33,7 +33,7 @@ So get your finances, projects and products, sales, inventory and purchases full
 ## Visual Factory -->
 
 <br>
-<div class="banner animel orange4">
+<div class="banner animel orange1">
 	<span>Visual Factory</span>
 </div>
 <br>
