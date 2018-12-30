@@ -5,14 +5,17 @@ category: main
 position: 2
 ---
 
-Using our platform, we have already built some products: an ERP system, targeted at scale-ups and Visual Factory, a manufacturing execution system (MES) for production shopfloors.
+Using our platform, we have already built two products: an ERP system, targeted at scale-ups and Visual Factory, a manufacturing execution system (MES) for production shopfloors.
 
 <!-- <a name="erp-next"></a>
 ## ERP-Next -->
-
+<br>
 <div class="banner animel blue3">
-	<span>ERP-Next - The ERP system built for scale-ups</span>
+	<span>ERP-Next</span>
 </div>
+<br>
+
+## The ERP system built for scale-ups
 
 We offer a unique ERP system, capable of fully supporting scale-ups during their way up.
 
@@ -29,9 +32,13 @@ So get your finances, projects and products, sales, inventory and purchases full
 <!-- <a name="visual-factory"></a>
 ## Visual Factory -->
 
+<br>
 <div class="banner animel orange4">
-	<span>Visual Factory - Streamline all production processes to reduce waste.</span>
+	<span>Visual Factory</span>
 </div>
+<br>
+
+## Streamline all production processes to reduce waste
 
 > "We are able to get more from our resources than we thought was possible. And we are just getting started."<span>Frank Iepema<br>Managing Director Hydro Hungary</span>
 
