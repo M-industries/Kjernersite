@@ -6,7 +6,7 @@ position: 2
 ---
 
 
-Kjerner has a new approach to building software solutions. To see it is to believe it, and we can show you amazing things in only a few hours.
+Kjerner has a new approach to building software solutions. To see it is to believe it, and we can show you amazing things in only a few hours. We use the [Alan platform](https://alan-platform.com)
 
 
 ## Enterprise-ready Software

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: solutions
 title: Solutions
 category: main
 position: 1
