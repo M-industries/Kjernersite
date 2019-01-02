@@ -7,8 +7,7 @@ position: 2
 
 ## Kjerner is different
 
-Kjerner has a new approach to building software solutions. To see it is to believe it, and we can show you amazing things in only a few hours. We use the [Alan platform](https://alan-platform.com)
-
+Kjerner has a new approach to building software solutions. To see it is to believe it, and we can show you amazing things in only a few hours. We use the [Alan platform](https://alan-platform.com), for which we took over development from M-industries since the beginning of 2019.
 
 ## Enterprise-ready Software
 
@@ -20,4 +19,4 @@ The alan platform allows us to write software at lightning speed. You can use yo
 
 ## Ready To Use
 
-When the design session is over, your software is ready to use. Only when you decide to start using it, you will start paying for it.
+When a design session is over, your software is ready to use. Only when you decide to start using it, you will start paying for its usage.

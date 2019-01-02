@@ -27,7 +27,7 @@ With a solution using our ERP product, you will have the possibility to:
 * Have it adapted to your needs and extended to support your unique business processses
 * And still be sure to receive the latest technical and functional updates, keeping your system up-to-date
 
-So get your finances, projects and products, sales, inventory and purchases fully supported, so you can focus on improving your business. Have us demonstrate you how we do that by contacting us at erpnext@kjerner.com
+Get all of your business processes, including finances, projects and products, sales, inventory and purchases fully supported, so you can focus on improving your business. Have us demonstrate you how we do that by contacting us at erpnext@kjerner.com
 
 <!-- <a name="visual-factory"></a>
 ## Visual Factory -->
@@ -42,10 +42,7 @@ So get your finances, projects and products, sales, inventory and purchases full
 
 > "We are able to get more from our resources than we thought was possible. And we are just getting started."<span>Frank Iepema<br>Managing Director Hydro Hungary</span>
 
-All the information you
-need to make decisions and improve OEE, based on accurate
-and up to date data. Live charts and reports means you can
-get updates when you need them.
+All the information you need to make decisions and improve OEE, based on accurate and up to date data. Live charts and reports means you can get updates when you need them.
 
 Visual Factory has been developed over the last six years.
 The enabling platform has been under development for over a

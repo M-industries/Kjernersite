@@ -5,7 +5,7 @@ category: main
 position: 1
 ---
 
-## Start from the inside out
+## Going fully digital: start from the inside out
 
 > "Our project with M-industries received the ‘Recognition of Excellence’ award from our CEO." <span>Matthé de Vent<br>Director Supply Chain Planning Tata Steel Mainland Europe</span>
 
