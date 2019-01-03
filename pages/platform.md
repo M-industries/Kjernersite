@@ -19,7 +19,6 @@ both a database design and a user interface.
 This method is fast and iterates fast, like creating something in Excel would.
 However, Alan ensures data accuracy and consistency and scales up to enterprise level.
 
-
 <a name="alan"></a>
 ## Alan
 
@@ -28,11 +27,8 @@ the language and the systems that it supports.
 
 Go to the [Alan micro-site](https://alan-platform.com) to learn more.
 
-
 ### Start Building
 We have documentation and templates ready for you in [our GitHub repositories](https://github.com/M-industries). Check out the [project template](https://github.com/M-industries/AlanProjectTemplate) to get started.
-
-
 
 <a name="learn"></a>
 ## Learn how it's done

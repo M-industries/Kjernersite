@@ -51,7 +51,6 @@ Factory. The underlying foundations have been researched
 extensively in collaboration with the Delft University of
 Technology.
 
-
 <a name="visual-factory-features"></a>
 ## Features
 
@@ -70,7 +69,6 @@ Technology.
 - Real time information about production progress,
 	<br>Helping you improve your schedule over time.
 
-
 <a name="visual-factory-benefits"></a>
 ## Goals & Benefits
 
@@ -86,7 +84,6 @@ but from a better starting point.
 - Lowering capital expenditure on resources by improving efficiency.
 - Showing compliance to certification requirements.
 - Minimizing rework and losses through a detailed traceability chain.
-
 
 <a name="visual-factory-choose"></a>
 ## Why choose Visual Factory
