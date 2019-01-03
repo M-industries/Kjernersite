@@ -4,17 +4,13 @@ title: Company
 category: secondary
 position: 2
 ---
-
 ## Kjerner is different
-
 Kjerner has a new approach to building software solutions. To see it is to believe it, and we can show you amazing things in only a few hours. We use the [Alan platform](https://alan-platform.com). We took over development of the Alan platform from M-industries since the beginning of 2019.
 
 ## Startup mentality
-
 Kjerner and M-industries have been working with a relatively small development team of a little more than 10 people on our consultancy, software and platform at the same time. We kept the team small and tightly-nit to be able to stay agile and develop a platform that is innovative from the ground up. Going as far as developing our own parser and database technology on Alan as well, which made it possible to speed up our internal development by multiple factors as well. "Work smarter, not harder" and "Less is More" are the two important mottos we work and live by.
 
 ## Customer focused from the start
-
 We started out with some large customers very early on and have focused on making and keeping them happy since the start. They have repayed us by giving us the responsibility of supporting some of their crucial business processes and providing us with valuable feedback and the funding to develop Alan with a long-term view during that whole time.
 
 ## Partnership
