@@ -14,5 +14,5 @@ We started out with some large customers very early on and have focused on makin
 <img src="/assets/logos/4.png" alt="Logo OGD"
 	title="Logo OGD" width="449" height="250" ALIGN="left" />
 #### Partnership with OGD
-We have partnered with [OGD](https://ogd.nl) to make Alan available to as many companies and people as possible, as fast as possible. With 1200 employees and a wide range of IT services delivered, OGD has the size, organisation and wide expertise that fits perfectly with our innovative approach to software. Together, we can provide a solid basis of technical innovation, expertise, manpower and organisation. This makes it possible for you to depend on us for all of your needs, even strategic, large and long-term needs.
+We have partnered with [OGD](https://ogd.nl) to make Alan available to as many companies and people as possible, as fast as possible. With 1200 employees and a wide range of IT services delivered, OGD has the size, organisation and wide expertise that fits perfectly with our innovative approach to software. Together, we can provide a solid basis of technical innovation, expertise, manpower and organisation. This makes it possible for you to depend on us for your strategic, large and long-term needs.
 
