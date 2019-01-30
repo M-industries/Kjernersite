@@ -12,7 +12,7 @@ Kjerner and M-industries have been working since 2011 with a relatively small de
 We started out with some large customers very early on and have focused on making and keeping them happy since the start. They have repayed us by giving us the responsibility of supporting some of their crucial business processes and providing us with valuable feedback and the funding to develop Alan with a long-term view.
 
 <img src="/assets/logos/4.png" alt="Logo OGD"
-	title="Logo OGD" width="449" height="250" ALIGN="left" />
+	title="Logo OGD" width="420" height="238" ALIGN="left" />
 #### Partnership with OGD
 We have partnered with [OGD](https://ogd.nl) to make Alan available to as many companies and people as possible, as fast as possible. With 1200 employees and a wide range of IT services delivered, OGD has the size, organisation and wide expertise that fits perfectly with our innovative approach to software. Together, we can provide a solid basis of technical innovation, expertise, manpower and organisation. This makes it possible for you to depend on us for your strategic, large and long-term needs.
 
