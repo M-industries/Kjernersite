@@ -3,6 +3,7 @@ layout: page
 title: Products
 category: main
 position: 2
+slides: ['assets/photo/visual_factory/20140404_124210.jpg', 'assets/photo/visual_factory/20160705_135303.jpg','assets/photo/visual_factory/VF-new-material-handling-cropped.png']
 ---
 
 Using our platform, we have already built two products: an ERP system, targeted at scale-ups and Visual Factory, a manufacturing execution system (MES) for production shopfloors.
@@ -68,6 +69,8 @@ Technology.
 
 - Real time information about production progress,
 	<br>Helping you improve your schedule over time.
+
+{% include slideshow.html %}
 
 <a name="visual-factory-benefits"></a>
 ## Goals & Benefits
