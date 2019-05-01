@@ -27,9 +27,6 @@ the language and the systems that it supports.
 
 Go to the [Alan micro-site](https://alan-platform.com) to learn more.
 
-### Start Building
-We have documentation and templates ready for you in [our GitHub repositories](https://github.com/M-industries). Check out the [project template](https://github.com/M-industries/AlanProjectTemplate) to get started.
-
 <a name="learn"></a>
 ## Learn how it's done
 
