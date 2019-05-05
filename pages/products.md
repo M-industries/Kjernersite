@@ -30,7 +30,7 @@ With a solution using our ERP product, you will have the possibility to:
 
 Get all of your business processes, including finances, projects and products, sales, inventory and purchases fully supported, so you can focus on improving your business. Have us demonstrate you how we do that by contacting us at erpnext@kjerner.com
 
-<a href="https://ogd.nl"><img src="/assets/photo/erp_next/urenregistratie.png" alt="ERP Next"
+<img src="/assets/photo/erp_next/urenregistratie.png" alt="ERP Next"
 	title="ERP Next" />
 
 <!-- <a name="visual-factory"></a>
