@@ -2,7 +2,7 @@
 layout: page
 title: Company
 category: secondary
-position: 2
+position: 3
 ---
 Kjerner has a completely new approach to building software solutions. To see it is to believe it, and we can show you amazing things in only a few hours. We use the [Alan platform](https://alan-platform.com). We took over development of the Alan platform from M-industries since the beginning of 2019.
 
