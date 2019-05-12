@@ -2,7 +2,7 @@
 layout: page
 title: Support
 category: secondary
-position: 3
+position: 4
 ---
 For questions or issues with your application, please contact us at [service@kjerner.com](mailto:service@kjerner.com)
 
