@@ -12,6 +12,17 @@ if (article) {
 	max = article.clientHeight + article.offsetTop - document.documentElement.clientHeight;
 }
 
+function smoothScroll(target) {
+    var header_height = h.clientHeight;
+    var target_element = document.querySelector(target);
+    var target_top = target_element.getBoundingClientRect().top;
+    window.scrollTo({
+        top: target_top + window.scrollY - header_height,
+        left: 0,
+        behavior: 'smooth'
+    });
+}
+
 function checkAnimelsInView(){
 	animels.forEach(function(i){
 		if (i.getBoundingClientRect().top < document.documentElement.clientHeight) {
@@ -47,6 +58,11 @@ function buildAnchorList() {
 			var link = document.createElement("a");
 			link.setAttribute("href", "#" + a.getAttribute("id"));
 			link.textContent = a.textContent;
+			link.onclick = function(event) {
+				event.preventDefault();
+				event.stopPropagation();
+				smoothScroll("#" + a.getAttribute("id"));
+			};
 			anchor_list.appendChild(link);
 		});
 	}
