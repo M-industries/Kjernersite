@@ -1,0 +1,10 @@
+.home div.centered {
+	text-align: center;
+	background: $grey7;
+	padding: 2rem*$ratio*$ratio*$ratio 1rem*$ratio;
+	font-size: 1em*$ratio;
+
+	h2 {
+		padding-top: 0;
+	}
+}
