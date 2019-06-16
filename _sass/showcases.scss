@@ -1,0 +1,46 @@
+.showcases {
+	h1 {
+		text-align: center;
+		margin-top: 1em*$ratio*$ratio;
+	}
+	h2 {
+		text-align: center;
+		text-align: center;
+		padding: 0 0 2em*$ratio*$ratio 0;
+		margin: -2em*$ratio*$ratio 0 0 0;
+		@media screen and (max-width: $breakpoint - 1) {
+			margin-top: -1em*$ratio*$ratio;
+			padding-bottom: 1em*$ratio*$ratio;
+		}
+		color: white;
+		font-size: 1em*$ratio*$ratio;
+	}
+
+	article>:not(div) {
+		width: 1200px;
+	}
+
+	h2 + p {
+		position: relative;
+		padding-left: 120px;
+		@media screen and (max-width: $breakpoint - 1) {
+			margin: 0 auto 2em*$ratio*$ratio auto;
+		}
+		@media screen and (min-width: $breakpoint) {
+			width: 600px;
+			margin: 0 auto 2em*$ratio*$ratio*$ratio 200px;
+		}
+		a:first-child {
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+	}
+
+	@media screen and (min-width: $breakpoint) {
+		h2:nth-child(6n + 2) + p {
+			margin-right: 200px;
+			margin-left: auto;
+		}
+	}
+}
