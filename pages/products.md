@@ -8,6 +8,13 @@ slides: ['assets/photo/visual_factory/20140404_124210.jpg', 'assets/photo/visual
 
 Using our platform, we have already built two products: an ERP system, targeted at scale-ups and Visual Factory, a manufacturing execution system (MES) for production shopfloors.
 
+<img src="/assets/products/erpnext.svg" alt="ERP Next Logo" width="256" height="256"><br>
+A fully capable ERP system for scale-ups: it scales along with you
+
+<img src="/assets/products/vf.svg" alt="ERP Next Logo" width="256" height="256"><br>
+A tailor made MES for production shopfloors
+
+
 <!-- <a name="erp-next"></a>
 ## ERP-Next -->
 <br>
@@ -24,13 +31,13 @@ As a business aiming to scale up, getting your core business processes fully sup
 If you scale up without this, you will make your business unmanageable - which is very hard to revert.
 
 With a solution using our ERP product, you will have the possibility to:
-* Start without a high investment and without high subsciption fees
-* Have it adapted to your needs and extended to support your unique business processses
+* Start without a high investment and without high subscription fees
+* Have it adapted to your needs and extended to support your unique business processes
 * And still be sure to receive the latest technical and functional updates, keeping your system up-to-date
 
 Get all of your business processes, including finances, projects and products, sales, inventory and purchases fully supported, so you can focus on improving your business. Have us demonstrate you how we do that by contacting us at erpnext@kjerner.com
 
-<img src="/assets/photo/erp_next/urenregistratie.png" alt="ERP Next"
+<img src="assets/photo/erp_next/urenregistratie.png" alt="ERP Next Screenshot"
 	title="ERP Next" />
 
 <!-- <a name="visual-factory"></a>
