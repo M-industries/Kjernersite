@@ -12,7 +12,7 @@
 
 	<link rel="icon" href="{{ 'favicon.ico' | relative_url }}">
 
-	<link rel="stylesheet" href="{{ 'src/normalize.css' | relative_url }}">
-	<link rel="stylesheet" href="{{ 'src/swiper.min.css' | relative_url }}">
-	<link rel="stylesheet" href="{{ 'src/main.css' | relative_url }}">
+	<link rel="stylesheet" href="{{ 'src/normalize.css' | relative_url }}?{{ site.time | date: "%s"}}">
+	<link rel="stylesheet" href="{{ 'src/swiper.min.css' | relative_url }}?{{ site.time | date: "%s"}}">
+	<link rel="stylesheet" href="{{ 'src/main.css' | relative_url }}?{{ site.time | date: "%s"}}">
 </head>
