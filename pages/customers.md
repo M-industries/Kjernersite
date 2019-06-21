@@ -6,6 +6,10 @@ position: 2
 ---
 
 
+Our customers, some of them leaders in their field, have given us the responsibility of supporting some of their crucial business processes. In turn they provide us with invaluable feedback to develop Alan.
+
+
+
 ![](/assets/companies/hydro.jpg)
 
 ## Hydro

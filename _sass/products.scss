@@ -1,0 +1,33 @@
+.products {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	margin-top: 1rem*$ratio*$ratio*$ratio*$ratio;
+
+	li {
+		display: flex;
+		flex-direction: column;
+		width: 256px;
+		line-height: $tight;
+		color: $grey2;
+		font-weight: bold;
+		font-size: 1em*$ratio;
+	}
+	li + li {
+		margin-left: 2rem*$ratio*$ratio;
+	}
+
+	.button {
+		align-self: flex-end;
+		margin-top: 1rem*$ratio;
+	}
+
+	img {
+		position: relative;
+		transition: transform .2s ease-in;
+		&:hover {
+			transform: scale(1.05);
+			transition: transform .1s ease-in;
+		}
+	}
+}
