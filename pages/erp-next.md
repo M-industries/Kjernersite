@@ -11,6 +11,8 @@ We offer a unique ERP system, capable of fully supporting scale-ups during their
 As a business aiming to scale up, getting your core business processes fully supported by software is essential.
 If you scale up without this, you will make your business unmanageable - which is very hard to revert.
 
+{% include erp-next.html %}
+
 With a solution using our ERP product, you will have the possibility to:
 * Start without a high investment and without high subscription fees
 * Have it adapted to your needs and extended to support your unique business processes

@@ -1,208 +1,208 @@
 @mixin blogLink {
-	& {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		font-weight: bold;
-		width: $ratio*$ratio*10rem;
-		max-width: 100%;
-		padding: 1rem*$ratio;
-		background: url('../assets/photo2-orange.jpg') center/cover no-repeat;
-		position: relative;
-		transition: all .6s ease-in-out;
-		outline: 2px solid transparent;
+    & {
+        display: flex;
+        justify-content: center;
+        width: $ratio*$ratio*10rem;
+        max-width: 100%;
+        position: relative;
+        padding: 1rem*$ratio;
+        font-weight: bold;
+        background: url('../assets/photo2-orange.jpg') center/cover no-repeat;
+        transition: all .6s ease-in-out;
+        flex-direction: column;
+        outline: 2px solid transparent;
 
-		&::after {
-			content: "";
-			position: absolute;
-			border: 1rem solid transparent;
-			border-left-color: $orange;
-			top: 50%;
-			width: 0;
-			height: 0;
-			right: 0;
-			margin-top: -1rem;
-			transition: border-color .6s ease-in-out;
-		}
-		&:hover::after,
-		&:focus::after,
-		&:active::after {
-			border-left-color: white;
-		}
-	}
+        &::after {
+            content: '';
+            width: 0;
+            height: 0;
+            position: absolute;
+            top: 50%;
+            right: 0;
+            margin-top: -1rem;
+            border: 1rem solid transparent;
+            transition: border-color .6s ease-in-out;
+            border-left-color: $orange;
+        }
+        &:hover::after,
+        &:focus::after,
+        &:active::after {
+            border-left-color: white;
+        }
+    }
 
-	&,
-	&:link,
-	&:hover,
-	&:active,
-	&:visited {
-		text-decoration: none;
-		color: #fff;
-	}
+    &,
+    &:link,
+    &:hover,
+    &:active,
+    &:visited {
+        text-decoration: none;
+        color: #fff;
+    }
 
-	&:hover {
-		outline-color: $orange;
-	}
-	&:focus,
-	&:active {
-		top: 1px;
-		transition: all .2s ease-in-out;
-	}
-	> span {
-		display: block;
-		font-weight: normal;
-		font-size: 1em/$tight;
-		margin-top: 1em/$ratio;
-	}
+    &:hover {
+        outline-color: $orange;
+    }
+    &:focus,
+    &:active {
+        top: 1px;
+        transition: all .2s ease-in-out;
+    }
+    > span {
+        display: block;
+        margin-top: 1em/$ratio;
+        font-weight: normal;
+        font-size: 1em/$tight;
+    }
 }
 
 .blog-list {
-	text-align: center;
-	font-size: $ratio*1rem;
-	line-height: $tight;
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-	margin-top: $ratio*$ratio*1rem;
-	margin-bottom: $ratio*$ratio*$ratio*$ratio*1rem;
+    display: flex;
+    justify-content: center;
+    margin-top: $ratio*$ratio*1rem;
+    margin-bottom: $ratio*$ratio*$ratio*$ratio*1rem;
+    font-size: $ratio*1rem;
+    line-height: $tight;
+    text-align: center;
+    flex-wrap: wrap;
 
-	li {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		margin: 0 .5rem 1rem .5rem;
+    li {
+        display: flex;
+        justify-content: center;
+        margin: 0 .5rem 1rem .5rem;
 
-		a {
-			@include blogLink;
-			width: $ratio*10rem;
-			height: $ratio*10rem;
-		}
-		&:nth-child(odd) a {
-			background-image: url('../assets/photo1-orange.jpg');
-		}
-		&:nth-child(even) a {
-			background-image: url('../assets/photo2-blue.jpg');
-			&::after {
-				border-left-color: $blue;
-			}
-		}
-		&:nth-child(even) a:hover {
-			outline-color: $blue;
-			&::after {
-				border-left-color: #fff;
-			}
-		}
+        transition: all .6s ease-out;
+        flex-direction: column;
 
-		transition: all .6s ease-out;
-		&:not(.top-in-view) {
-			opacity: .8;
-		}
-	}
+        a {
+            @include blogLink;
+            width: $ratio*10rem;
+            height: $ratio*10rem;
+        }
+        &:nth-child(odd) a {
+            background-image: url('../assets/photo1-orange.jpg');
+        }
+        &:nth-child(even) a {
+            background-image: url('../assets/photo2-blue.jpg');
+            &::after {
+                border-left-color: $blue;
+            }
+        }
+        &:nth-child(even) a:hover {
+            outline-color: $blue;
+            &::after {
+                border-left-color: #fff;
+            }
+        }
+        &:not(.top-in-view) {
+            opacity: .8;
+        }
+    }
 }
 
 .page .blog-list {
-	display: block;
-	text-align: left;
-	font-size: 1rem;
-	margin: 0;
-	li {
-		margin-left: 0;
-		margin-right: 0;
-	}
-	a {
-		height: auto;
-		width: $ratio*$ratio*10rem;
-	}
+    display: block;
+    margin: 0;
+    font-size: 1rem;
+    text-align: left;
+    li {
+        margin-right: 0;
+        margin-left: 0;
+    }
+    a {
+        width: $ratio*$ratio*10rem;
+        height: auto;
+    }
 }
 
 a.bloglink {
-	@include blogLink;
+    @include blogLink;
 }
 
 
 .blog h1 {
-	margin-bottom: 0;
+    margin-bottom: 0;
 }
 .blog dl {
-	margin: 0 auto $ratio*$ratio*1rem auto;
+    margin: 0 auto $ratio*$ratio*1rem auto;
 
-	> *,
-	ul,
-	li {
-		display: inline-block;
-		margin: 0;
-	}
-	dt {
-		color: $grey3;
-		font-style: italic;
-	}
-	dt.date {
-		display: none;
-	}
-	dt::after {
-		content: ":";
-	}
-	dd {
-		margin-right: 1rem;
-	}
-	li {
-		&:not(:last-child)::after {
-			content: ","
-		}
-	}
+    > *,
+    ul,
+    li {
+        display: inline-block;
+        margin: 0;
+    }
+    dt {
+        font-style: italic;
+        color: $grey3;
+    }
+    dt.date {
+        display: none;
+    }
+    dt::after {
+        content: ':';
+    }
+    dd {
+        margin-right: 1rem;
+    }
+    li {
+        &:not(:last-child)::after {
+            content: ','
+        }
+    }
 }
 
 
 #anchor-list {
-	@media (max-width: $breakpoint*1.5) {
-		display: none;
-	}
-	position: fixed;
-	margin-top: 0;
-	margin-left: $ratio*$ratio*1rem;
-	top: $ratio*$ratio*$ratio*$ratio*1rem;
-	z-index: 4;
-	font-size: 1rem/$tight;
+    @media (max-width: $breakpoint*1.5) {
+        display: none;
+    }
+    position: fixed;
+    top: $ratio*$ratio*$ratio*$ratio*1rem;
 
-	left: calc(50vw + #{$breakpoint/2});
+    left: calc(50vw + #{$breakpoint/2});
+    z-index: 4;
+    margin-top: 0;
+    margin-left: $ratio*$ratio*1rem;
+    font-size: 1rem/$tight;
 
-	a {
-		display: block;
-		position: relative;
-	}
-	a::before {
-		content: "";
-		display: block;
-		width: 1em/$ratio;
-		height: 1em/$ratio;
-		border: 1px solid $blue;
-		border-radius: 100%;
-		position: absolute;
-		left: -1em*$tight;
-		top: .5em;
-	}
-	a:first-child {
-		font-weight: bold;
-	}
+    a {
+        display: block;
+        position: relative;
+    }
+    a::before {
+        content: '';
+        display: block;
+        width: 1em/$ratio;
+        height: 1em/$ratio;
+        position: absolute;
+        top: .5em;
+        left: -1em*$tight;
+        border: 1px solid $blue;
+        border-radius: 100%;
+    }
+    a:first-child {
+        font-weight: bold;
+    }
 
-	a,
-	a:link,
-	a:hover,
-	a:active,
-	a:visited {
-		text-decoration: none;
-		color: $grey3;
-	}
-	a:hover,
-	a:active {
-		color: $orange;
-		text-decoration: underline;
-	}
+    a,
+    a:link,
+    a:hover,
+    a:active,
+    a:visited {
+        text-decoration: none;
+        color: $grey3;
+    }
+    a:hover,
+    a:active {
+        text-decoration: underline;
+        color: $orange;
+    }
 
-	a:first-child,
-	a.anchor-in-view {
-		&::before {
-			background: transparentize($blue, 0.5);
-		}
-	}
+    a:first-child,
+    a.anchor-in-view {
+        &::before {
+            background: transparentize($blue, 0.5);
+        }
+    }
 }

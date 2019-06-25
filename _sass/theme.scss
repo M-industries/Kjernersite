@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700");
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,700');
 @import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono');
 
 $black: #040404;
-$blue: #05BDFF;
-$orange: #D86531;
+$blue: #05bdff;
+$orange: #d86531;
 
 $grey1: lighten($black, 16%);
 $grey2: lighten($black, 28%);
@@ -27,33 +27,33 @@ $breakpoint: 800px;
 $breakpoint-small: 500px;
 
 * {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 @mixin breathe($property) {
-	transition: $property .5s ease-in-out;
+    transition: $property .5s ease-in-out;
 
-	&:hover,
-	&:active {
-		transition: $property .1s ease-in-out;
-	}
+    &:hover,
+    &:active {
+        transition: $property .1s ease-in-out;
+    }
 }
 @mixin breatheFast($property) {
-	transition: $property .25s ease-in-out;
+    transition: $property .25s ease-in-out;
 
-	&:hover,
-	&:active {
-		transition: $property .05s ease-in-out;
-	}
+    &:hover,
+    &:active {
+        transition: $property .05s ease-in-out;
+    }
 }
 @mixin clearFix() {
-	&:before,
-	&:after {
-	    content: " "; /* 1 */
-	    display: table; /* 2 */
-	}
+    &:before,
+    &:after {
+        content: ' '; /* 1 */
+        display: table; /* 2 */
+    }
 
-	&:after {
-	    clear: both;
-	}
+    &:after {
+        clear: both;
+    }
 }

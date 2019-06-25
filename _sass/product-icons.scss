@@ -1,0 +1,25 @@
+.icons-strip {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem*$ratio*$ratio*$ratio;
+    margin-bottom: 1rem*$ratio*$ratio*$ratio;
+    font-weight: bold;
+    color: $grey2;
+
+    li {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+
+        + li {
+            margin-left: 1rem*$ratio*$ratio*$ratio;
+        }
+
+        img {
+            margin-bottom: 1rem;
+        }
+    }
+}
