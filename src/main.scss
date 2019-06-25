@@ -31,11 +31,11 @@ aside {
 	color: $grey3;
 }
 
-article > :not(div) {
-	width: 800px;
-	max-width: calc(100% - #{$ratio*$ratio*1rem});
-	margin-left: auto;
-	margin-right: auto;
+main > :not(div) {
+    width: 800px;
+    max-width: calc(100% - #{$ratio*$ratio*1rem});
+    margin-right: auto;
+    margin-left: auto;
 }
 
 

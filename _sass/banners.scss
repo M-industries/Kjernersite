@@ -28,7 +28,7 @@
     &.orange4 { background-image: url('../assets/photo4-orange.jpg'); }
     &.orange5 { background-image: url('../assets/photo5-orange.jpg'); }
 
-    article > & {
+    main > & {
         margin: $ratio*$ratio*1rem 0;
     }
 

@@ -13,7 +13,7 @@ blockquote {
 
     transition: all .3s ease-out;
 
-    article > & {
+    main > & {
         max-width: 30rem;
         float: none;
         margin: $ratio*$ratio*1rem auto;
@@ -51,7 +51,7 @@ blockquote {
 
     @media screen and (max-width: $breakpoint) {
         &,
-        article > & {
+        main > & {
             width: 80%;
             max-width: 80%;
             float: none;
