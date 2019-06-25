@@ -23,7 +23,7 @@ For [Hydro](https://hydro.co), we built and delivered a new ERP and MES (Visual 
 ## Axa
   
 <a href="https://www.axasecurity.com/" rel="external"><img src="/assets/logos/axa.png" alt="Logo Axa" title="Axa" height="100" width="100"></a>
-For [AXA](https://www.axasecurity.com/), we implemented Visual Factory at their production facility, improving machine efficiency by supporting order planning and tracking and problem registration and resolution. Our MES solution was implemented with out provided hardware and connected to a custom ERP system.
+For [AXA](https://www.axasecurity.com/), we implemented Visual Factory at their production facility, improving machine efficiency by supporting order planning and tracking and problem registration and resolution. Our MES solution was implemented with our provided hardware and connected to a custom ERP system.
 
 
 ![](/assets/companies/tata.jpg)
