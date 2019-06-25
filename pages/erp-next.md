@@ -1,7 +1,8 @@
 ---
 layout: page
 title: ERP Next
-# slides: ['assets/photo/visual_factory/20140404_124210.jpg', 'assets/photo/visual_factory/20160705_135303.jpg','assets/photo/visual_factory/VF-new-material-handling-cropped.png']
+hero: assets/heroes/unsplash-Xn5FbEM9564.jpg
+logo: assets/products/erpnext-h1.svg
 ---
 
 ## The ERP system built for scale-ups
