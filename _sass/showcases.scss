@@ -45,7 +45,7 @@
     }
 
     @media screen and (min-width: $breakpoint) {
-        h2:nth-child(6n + 2) + p {
+        h2:nth-child(6n + 3) + p {
             margin-right: 200px;
             margin-left: auto;
         }

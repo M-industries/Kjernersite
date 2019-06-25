@@ -22,7 +22,7 @@ For [Hydro](https://hydro.co), we built and delivered a new ERP and MES (Visual 
 
 ## Axa
   
-<a href="https://www.axasecurity.com/" rel="external"><img src="/assets/logos/axa.png" alt="Logo Axa" title="Logo Axa" height="100" width="100"></a>
+<a href="https://www.axasecurity.com/" rel="external"><img src="/assets/logos/axa.png" alt="Logo Axa" title="Axa" height="100" width="100"></a>
 For [AXA](https://www.axasecurity.com/), we implemented Visual Factory at their production facility, improving machine efficiency by supporting order planning and tracking and problem registration and resolution. Our MES solution was implemented with out provided hardware and connected to a custom ERP system.
 
 
@@ -30,7 +30,7 @@ For [AXA](https://www.axasecurity.com/), we implemented Visual Factory at their 
 
 ## Tata
 
-<a href="https://www.tatasteel.nl/" rel="external"><img src="/assets/logos/tata.png" alt="Logo Tata" title="Logo Tata" height="100" width="100"></a>
+<a href="https://www.tatasteel.nl/" rel="external"><img src="/assets/logos/tata.png" alt="Logo Tata" title="Tata" height="100" width="100"></a>
 For [Tata](https://www.tatasteel.nl/), we created a supply chain solution to improve on-time delivery and stock efficiency. We built this within a few months and got both of these KPI's close to their theoretical limits. The project received a 'Recognition of excellence' award by the CEO.
 
 
@@ -38,5 +38,13 @@ For [Tata](https://www.tatasteel.nl/), we created a supply chain solution to imp
 
 ## Apenheul
 	
-<a href="https://www.apenheul.nl/" rel="external"><img src="/assets/logos/Logo_Apenheul.jpg" alt="Logo Apenheul" title="Logo Apenheul" height="125" width="100"></a>
+<a href="https://www.apenheul.nl/" rel="external"><img src="/assets/logos/Logo_Apenheul.jpg" alt="Logo Apenheul" title="Apenheul" height="125" width="100"></a>
 For the [Apenheul](https://www.apenheul.nl/), we created a solution to improve efficiency of their food supply operation, in cooperation with OGD. We built this within a few weeks and were able to integrate all customer wishes, while making use of the generated GUI to provide access to all parties involved.
+
+
+![](/assets/companies/naturalbulbs.jpg)
+
+## Natural Bulbs
+	
+<a href="https://www.naturalbulbs.nl/" rel="external"><img src="/assets/logos/naturalbulbs.jpg" alt="Logo Natural Bulbs" title="Natural Bulbs" height="72" width="72"></a>
+For [Naturalbulbs](https://www.naturalbulbs.nl), we provided our standard supply chain tooling with specific legal elements for the bio-agriculture business and connected this to their Prestashop webshop. Workflow was very important to this customer and we managed to follow their needs without adding unnecessary complexity or using separate workflow software.
