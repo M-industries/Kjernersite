@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Visual Factory
+hero: assets/heroes/unsplash-LvOGj1X2jHE.jpg
+logo: assets/products/vf-h1.svg
 slides: ['assets/photo/visual_factory/20140404_124210.jpg', 'assets/photo/visual_factory/20160705_135303.jpg','assets/photo/visual_factory/VF-new-material-handling-cropped.png']
 ---
 

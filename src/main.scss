@@ -2,56 +2,56 @@
 # this ensures Jekyll reads the file to be transformed into CSS later
 ---
 
-@import "theme";
+@import 'theme';
 
 
 footer {
-	text-align: center;
-	h3 {
-		font-size: 1rem*$ratio;
-		margin-bottom: $ratio*$ratio*1rem;
-	}
-	margin-top: $ratio*$ratio*1rem;
-	padding: $ratio*$ratio*$ratio*$ratio*1rem 1rem;
-	background: url('../assets/bol-transparent.svg') 10% 10% / 600px 600px no-repeat;
-	color: $grey3;
+    text-align: center;
+    h3 {
+        margin-bottom: $ratio*$ratio*1rem;
+        font-size: 1rem*$ratio;
+    }
+    margin-top: $ratio*$ratio*1rem;
+    padding: $ratio*$ratio*$ratio*$ratio*1rem 1rem;
+    background: url('../assets/bol-transparent.svg') 10% 10% / 600px 600px no-repeat;
+    color: $grey3;
 }
 
 section,
 aside {
-	@include clearFix();
-	width: 800px;
-	max-width: calc(100% - #{$ratio*$ratio*1rem});
-	margin: 0 auto;
-	margin-top: $ratio*$ratio*1rem;
-	margin-bottom: $ratio*$ratio*$ratio*$ratio*1rem;
+    @include clearFix();
+    width: 800px;
+    max-width: calc(100% - #{$ratio*$ratio*1rem});
+    margin: 0 auto;
+    margin-top: $ratio*$ratio*1rem;
+    margin-bottom: $ratio*$ratio*$ratio*$ratio*1rem;
 }
 
 aside {
-	color: $grey3;
+    color: $grey3;
 }
 
-article > :not(div) {
-	width: 800px;
-	max-width: calc(100% - #{$ratio*$ratio*1rem});
-	margin-left: auto;
-	margin-right: auto;
+main > :not(div) {
+    width: 800px;
+    max-width: calc(100% - #{$ratio*$ratio*1rem});
+    margin-right: auto;
+    margin-left: auto;
 }
 
 
 
 .logos {
-	@include clearFix();
-	li {
-		display: inline-block;
-		float: left;
-		max-width: 20%;
-		padding-left: 2%;
-		padding-right: 2%;
-	}
-	img {
-		width: 100%;
-	}
+    @include clearFix();
+    li {
+        display: inline-block;
+        max-width: 20%;
+        float: left;
+        padding-right: 2%;
+        padding-left: 2%;
+    }
+    img {
+        width: 100%;
+    }
 }
 
 
@@ -59,71 +59,99 @@ article > :not(div) {
 
 html,
 body {
-	color: $black;
-	font-size: 14px;
-	line-height: $ratio;
-	font-family: "Montserrat", sans-serif;
-	width: 100%;
-	height: 100%;
+    width: 100%;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: $ratio;
+    color: $black;
 }
 
 h1 {
-	font-size: $ratio*$ratio*1em;
-	margin: $ratio*$ratio*$ratio*1rem auto $ratio*$ratio*1rem auto;
+    margin: $ratio*$ratio*$ratio*1rem auto $ratio*$ratio*1rem auto;
+    font-size: $ratio*$ratio*1em;
+
+    &.hero {
+    	display: flex;
+    	align-items: center;
+    	justify-content: center;
+        width: 100%;
+        max-width: none;
+        margin: -10px 0 0 0;
+        padding: $ratio*$ratio*$ratio*1rem $ratio*$ratio*1rem $ratio*$ratio*1rem $ratio*$ratio*1rem;
+        background-color: #000;
+        background-size: cover;
+        background-position: center;
+        color: #fff;
+        font-size: $ratio*$ratio*$ratio*$ratio*1em;
+        text-align: center;
+        height: 600px;
+        max-height: 50vh;
+
+        img + span {
+        	display: block;
+        	width: 1px;
+        	height: 1px;
+        	position: absolute;
+        	top: -999px;
+        	left: -999px;
+        	overflow:hidden
+        }
+    }
 }
 h2 {
-	font-size: 1em*$ratio;
-	margin: 0 0 1em/$ratio/$ratio 0;
-	padding-top: 1em*$ratio*$ratio;
-	position: relative;
-	&.centered {
-		color: $grey5;
-		text-align: center;
-	}
-	&:target::before {
-		content: "";
-		background: $blue;
-		display: block;
-		width: 2px;
-		height: $ratio*1em;
-		position: absolute;
-		left: -1rem;
-		bottom: 0;
-	}
+    position: relative;
+    margin: 0 0 1em/$ratio/$ratio 0;
+    padding-top: 1em*$ratio*$ratio;
+    font-size: 1em*$ratio;
+    &.centered {
+        color: $grey5;
+        text-align: center;
+    }
+    &:target::before {
+        content: '';
+        display: block;
+        width: 2px;
+        height: $ratio*1em;
+        position: absolute;
+        bottom: 0;
+        left: -1rem;
+        background: $blue;
+    }
 }
 h3 {
-	font-size: 1em;
-	margin: 1em 0 0 0;
+    margin: 1em 0 0 0;
+    font-size: 1em;
 }
 
 small {
-	font-size: 1em/$ratio;
-	line-height: 2;
+    font-size: 1em/$ratio;
+    line-height: 2;
 }
 
 ol,
 ul {
-	margin: 1em auto 1em*$ratio auto;
-	padding: 0;
-	li {
-		margin-bottom: 1em/$ratio/$ratio;
-	}
-	nav & {
-		margin-top: 0;
-		li {
-			margin-bottom: 0;
-		}
-	}
+    margin: 1em auto 1em*$ratio auto;
+    padding: 0;
+    li {
+        margin-bottom: 1em/$ratio/$ratio;
+    }
+    nav & {
+        margin-top: 0;
+        li {
+            margin-bottom: 0;
+        }
+    }
 
-	ol,
-	ul {
-		margin-left: 1em*$ratio;
-		margin-top: .5em;
-	}
+    ol,
+    ul {
+        margin-top: .5em;
+        margin-left: 1em*$ratio;
+    }
 }
 
 img {
-	max-width: 100%;
+    max-width: 100%;
 }
 
 a,
@@ -131,78 +159,78 @@ a:link,
 a:visited,
 a:hover,
 a:active {
-	color: #2f59bc;
-	text-decoration: none;
+    text-decoration: none;
+    color: #2f59bc;
 }
 a:hover,
 a:active {
-	text-decoration: underline;
+    text-decoration: underline;
 }
 
 a.button {
-	background: $orange;
-	border: 1px solid darken($orange, 8%);
-	border-radius: 6px;
-	color: #fff;
-	padding: 1em/$ratio/$ratio/$ratio/$ratio 1em/$ratio/$ratio;
-	text-shadow: 1px 1px 4px transparentize($grey2, .7);
-	box-shadow: 1px 1px 4px transparentize($grey2, .7);
-	position: relative;
-	@include breathe(background);
-	&:hover,
-	&:active {
-		text-decoration: none;
-		background: darken($orange, 8%);
-	}
-	&:active {
-		top: 1px;
-		box-shadow: inset 1px 1px 2px transparentize($grey2, .7);
-	}
+    position: relative;
+    padding: 1em/$ratio/$ratio/$ratio/$ratio 1em/$ratio/$ratio;
+    border: 1px solid darken($orange, 8%);
+    border-radius: 6px;
+    background: $orange;
+    color: #fff;
+    text-shadow: 1px 1px 4px transparentize($grey2, .7);
+    box-shadow: 1px 1px 4px transparentize($grey2, .7);
+    @include breathe(background);
+    &:hover,
+    &:active {
+        text-decoration: none;
+        background: darken($orange, 8%);
+    }
+    &:active {
+        top: 1px;
+        box-shadow: inset 1px 1px 2px transparentize($grey2, .7);
+    }
 }
 
 p {
-	margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 pre {
-	line-height: $tight;
-	background: $grey7;
-	margin: 0;
-	padding: 1em/$ratio/$ratio 1em/$ratio;
-	box-sizing: border-box;
+    margin: 0;
+    padding: 1em/$ratio/$ratio 1em/$ratio;
+    line-height: $tight;
+    background: $grey7;
+    box-sizing: border-box;
 }
 code {
-	font-family: 'Ubuntu Mono', monospace;
-	background: $grey7;
-	padding: 0 1ex/$ratio;
-	p > & {
-		white-space: nowrap;
-	}
-	pre & {
-		background: none;
-		border-radius: 0;
-		padding: 0;
-		white-space: pre;
-	}
+    padding: 0 1ex/$ratio;
+    font-family: 'Ubuntu Mono', monospace;
+    background: $grey7;
+    p > & {
+        white-space: nowrap;
+    }
+    pre & {
+        padding: 0;
+        border-radius: 0;
+        background: none;
+        white-space: pre;
+    }
 }
 code .punctuation { color: $grey1; }
 code .string      { color: $blue; }
 code .operator    { color: $orange; }
 
 hr {
-	margin: 0 1rem/$ratio;
-	border: none;
-	border-bottom: 2px solid $orange;
+    margin: 0 1rem/$ratio;
+    border: none;
+    border-bottom: 2px solid $orange;
 }
 
 
-@import "headers";
-@import "banners";
-@import "progress-strip";
-@import "product-icons";
-@import "blog";
-@import "products";
-@import "quotes";
-@import "slideshow";
-@import "showcases";
-@import "home";
+@import 'headers';
+@import 'banners';
+@import 'progress-strip';
+@import 'product-icons';
+@import 'blog';
+@import 'products';
+@import 'quotes';
+@import 'slideshow';
+@import 'showcases';
+@import 'home';
