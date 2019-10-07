@@ -5,12 +5,11 @@ hero: assets/heroes/unsplash-Xn5FbEM9564.jpg
 logo: assets/products/erpnext-h1.svg
 ---
 
-## The ERP system built for scale-ups
+## The Next Generation ERP system built for Next Generation companies
 
-We offer a unique ERP system, capable of fully supporting scale-ups during their way up.
-
-As a business aiming to scale up, getting your core business processes fully supported by software is essential.
-If you scale up without this, you will make your business unmanageable - which is very hard to revert.
+We offer a unique ERP system, capable of fully supporting the energy of businesses that try to do things differently.
+As a business aiming to shake things up, getting your core business processes fully supported by software is essential.
+If you shake up without this, you will make your business unmanageable - which is very hard to revert.
 
 {% include erp-next.html %}
 
