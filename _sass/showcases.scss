@@ -10,44 +10,38 @@
         text-align: center;
         margin-top: 1em*$ratio*$ratio;
     }
-    h2 {
-        margin: -2em*$ratio*$ratio 0 0 0;
-        padding: 0 0 2em*$ratio*$ratio 0;
-        font-size: 1em*$ratio*$ratio;
-        color: #fff;
-        text-align: center;
-        text-align: center;
-        @media screen and (max-width: $breakpoint - 1) {
-            margin-top: -1em*$ratio*$ratio;
-            padding-bottom: 1em*$ratio*$ratio;
-        }
-    }
 
     main > :not(div) {
         width: 1200px;
     }
 
+    h2 {
+        margin: 0 auto;
+        padding-left: 120px;
+        @media screen and (min-width: $breakpoint) {
+            width: 600px;
+            margin: 0 auto 0 300px;
+        }
+    }
+
     h2 + p {
         position: relative;
         padding-left: 120px;
-        @media screen and (max-width: $breakpoint - 1) {
-            margin: 0 auto 2em*$ratio*$ratio auto;
-        }
-        @media screen and (min-width: $breakpoint) {
-            width: 600px;
-            margin: 0 auto 2em*$ratio*$ratio*$ratio 200px;
-        }
         a:first-child {
             position: absolute;
             top: 0;
             left: 0;
         }
+        @media screen and (max-width: $breakpoint - 1) {
+            margin: 0 auto 1em*$ratio*$ratio auto;
+        }
+        @media screen and (min-width: $breakpoint) {
+            width: 600px;
+            margin: 0 auto 1em*$ratio*$ratio*$ratio 300px;
+        }
     }
 
-    @media screen and (min-width: $breakpoint) {
-        h2:nth-child(6n + 3) + p {
-            margin-right: 200px;
-            margin-left: auto;
-        }
+    p + div {
+        margin-top: 1em*$ratio*$ratio*$ratio*$ratio*$ratio;
     }
 }
