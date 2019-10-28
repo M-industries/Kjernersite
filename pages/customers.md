@@ -45,7 +45,7 @@ For [Lisman Forklifts](https://www.lismanforklifts.com), we created a prototype 
 ## De Jong & Lavino
 	
 <a href="https://jolasteel.com/" rel="external"><img src="/assets/logos/dejongenlavino.png" alt="Logo De Jong & Lavino" title="De Jong & Lavino" height="98" width="100"></a>
-For [De Jong & Lavino](https://jolasteel.com/), we created a prototype of the rather specific steel plate stock management process for their type of business. A quote from the prototyping team on the side of the customer: "“During the Proof of Concept, we developed a very clear and interesting solution for the certificates problem that we have been running into for years already”.
+For [De Jong & Lavino](https://jolasteel.com/), we created a prototype of the rather specific steel plate stock management process for their type of business. A quote from the prototyping team on the side of the customer: "“During the Proof of Concept, we developed a very clear and interesting solution for the certificates problem that we have been running into for years now”.
 
 <div>
 	<img src="/assets/heroes/unsplash-Xn5FbEM9564.jpg" alt="">
