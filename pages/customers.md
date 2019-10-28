@@ -39,8 +39,13 @@ For [Naturalbulbs](https://www.naturalbulbs.nl), we provided our standard supply
 
 ## Lisman
 	
-<a href="https://www.lismanforklifts.com" rel="external"><img src="/assets/logos/lisman.png" alt="Logo Lisman" title="Lisman Forklifts" height="72" width="72"></a>
-For [Lisman Forklifts](https://www.lismanforklifts.com), we created a prototype for their new public interface connection
+<a href="https://www.lismanforklifts.com" rel="external"><img src="/assets/logos/lisman-forklifts.png" alt="Logo Lisman" title="Lisman Forklifts" height="72" width="72"></a>
+For [Lisman Forklifts](https://www.lismanforklifts.com), we created a prototype for their new public interface connection to downstream businesses.
+
+## De Jong & Lavino
+	
+<a href="https://jolasteel.com/" rel="external"><img src="/assets/logos/dejongenlavino.png" alt="Logo De Jong & Lavino" title="De Jong & Lavino" height="72" width="72"></a>
+For [De Jong & Lavino](https://jolasteel.com/), we created a prototype the rather specific steel plate stock management process for their type of business.
 
 <div>
 	<img src="/assets/heroes/unsplash-Xn5FbEM9564.jpg" alt="">
@@ -48,7 +53,12 @@ For [Lisman Forklifts](https://www.lismanforklifts.com), we created a prototype 
 
 # Partners
 
-## Natural Bulbs
+## Incertex
 	
-<a href="https://www.naturalbulbs.nl/" rel="external"><img src="/assets/logos/naturalbulbs.jpg" alt="Logo Natural Bulbs" title="Natural Bulbs" height="72" width="72"></a>
-For [Naturalbulbs](https://www.naturalbulbs.nl), we provided our standard supply chain tooling with specific legal elements for the bio-agriculture business and connected this to their Prestashop webshop. Workflow was very important to this customer and we managed to follow their needs without adding unnecessary complexity or using separate workflow software.
+<a href="https://www.incertex.com/" rel="external"><img src="/assets/logos/incertex.png" alt="Logo Incertex" title="Incertex" height="72" width="72"></a>
+With [Incertex](https://www.incertex.com), we are prototyping & developing software for asset management.
+
+## OGD
+	
+<a href="https://www.ogd.nl/" rel="external"><img src="/assets/logos/ogd.png" alt="Logo OGD" title="OGD" height="72" width="72"></a>
+With [OGD](https://www.ogd.com), we are prototyping & developing software for their customers.
