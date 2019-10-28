@@ -32,6 +32,15 @@ For [Tata](https://www.tatasteel.nl/), we created a supply chain solution to imp
 <a href="https://www.apenheul.nl/" rel="external"><img src="/assets/logos/Logo_Apenheul.jpg" alt="Logo Apenheul" title="Apenheul" height="125" width="100"></a>
 For the [Apenheul](https://www.apenheul.nl/), we created a solution to improve efficiency of their food supply operation, in cooperation with OGD. We built this within a few weeks and were able to integrate all customer wishes, while making use of the generated GUI to provide access to all parties involved.
 
+## Natural Bulbs
+	
+<a href="https://www.naturalbulbs.nl/" rel="external"><img src="/assets/logos/naturalbulbs.jpg" alt="Logo Natural Bulbs" title="Natural Bulbs" height="72" width="72"></a>
+For [Naturalbulbs](https://www.naturalbulbs.nl), we provided our standard supply chain tooling with specific legal elements for the bio-agriculture business and connected this to their Prestashop webshop. Workflow was very important to this customer and we managed to follow their needs without adding unnecessary complexity or using separate workflow software.
+
+## Lisman
+	
+<a href="https://www.lismanforklifts.com" rel="external"><img src="/assets/logos/naturalbulbs.jpg" alt="Logo Lisman" title="Lisman Forklifts" height="72" width="72"></a>
+For [Lisman Forklifts](https://www.lismanforklifts.com), we created a prototype for their new public interface connection
 
 <div>
 	<img src="/assets/heroes/unsplash-Xn5FbEM9564.jpg" alt="">
