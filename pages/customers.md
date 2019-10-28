@@ -40,7 +40,7 @@ For [Naturalbulbs](https://www.naturalbulbs.nl), we provided our standard supply
 ## Lisman
 	
 <a href="https://www.lismanforklifts.com" rel="external"><img src="/assets/logos/lisman-forklifts.png" alt="Logo Lisman" title="Lisman Forklifts" height="25" width="100"></a>
-For [Lisman Forklifts](https://www.lismanforklifts.com), we created a prototype for their new public interface connection to downstream businesses.
+For [Lisman Forklifts](https://www.lismanforklifts.com), we created a prototype for their new public interface connection to downstream businesses. The problem involved determining the data to export and connecting several consuming systems with different characteristics. Determining the right logical transformation of data was part of this. Next to this, a publicly available interface needed to be developed.
 
 ## De Jong & Lavino
 	
