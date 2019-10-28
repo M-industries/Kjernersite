@@ -45,4 +45,4 @@ However, Alan ensures data accuracy and consistency and scales up to enterprise 
 The Alan project has its own website, with more details about
 the language and the systems that it supports.
 
-Go to the [Alan micro-site](https://alan-platform.com) to learn more.
+Go to the [Alan website](https://alan-platform.com) to learn more.
