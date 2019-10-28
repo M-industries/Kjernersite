@@ -39,7 +39,7 @@ For [Naturalbulbs](https://www.naturalbulbs.nl), we provided our standard supply
 
 ## Lisman
 	
-<a href="https://www.lismanforklifts.com" rel="external"><img src="/assets/logos/naturalbulbs.jpg" alt="Logo Lisman" title="Lisman Forklifts" height="72" width="72"></a>
+<a href="https://www.lismanforklifts.com" rel="external"><img src="/assets/logos/lisman.png" alt="Logo Lisman" title="Lisman Forklifts" height="72" width="72"></a>
 For [Lisman Forklifts](https://www.lismanforklifts.com), we created a prototype for their new public interface connection
 
 <div>
