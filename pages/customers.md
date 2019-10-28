@@ -56,9 +56,9 @@ For [De Jong & Lavino](https://jolasteel.com/), we created a prototype of the ra
 ## Incertex
 	
 <a href="https://www.incertex.com/" rel="external"><img src="/assets/logos/incertex.png" alt="Logo Incertex" title="Incertex" height="28" width="100"></a>
-With [Incertex](https://www.incertex.com), we are prototyping & developing software for asset management. The people at Incertex are able to use Alan themselves to develop these.
+With [Incertex](https://www.incertex.com), we are prototyping & developing software solutions for asset management. The people at Incertex are able to use Alan themselves to develop these.
 
 ## OGD
 	
 <a href="https://www.ogd.nl/" rel="external"><img src="/assets/logos/ogd.png" alt="Logo OGD" title="OGD" height="56" width="100"></a>
-With [OGD](https://www.ogd.com), we are prototyping & developing software for their customers. The people at OGD are able to use Alan themselves to develop these.
+With [OGD](https://www.ogd.com), we are prototyping & developing software solutions for their customers. The people at OGD are able to use Alan themselves to develop these.
